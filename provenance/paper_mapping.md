@@ -8,9 +8,9 @@
 - Status: display-to-archive consistency verified; additional descriptive arithmetic recomputed. The complete model replay is reported separately in the execution logs.
 - Audit date: 25 October 2026.
 
-## Manuscript version
+## Manuscript build
 
-The audit used the manuscript version of 24 October 2026 (`VaR_ES_Dynamic_Joint_Calibration.pdf`, 26 pages, SHA-256 `86f29e6265870500ec6f4f653a1622fb0ba96dcc6512dffbba10b2f0104678d4`). The version of 25 October 2026 adds only the ORCID, code-availability and funding lines; its tables and numerical text are identical.
+The audit used the manuscript build `VaR_ES_Dynamic_Joint_Calibration.pdf` (26 pages, SHA-256 `86f29e6265870500ec6f4f653a1622fb0ba96dcc6512dffbba10b2f0104678d4`). The final manuscript differs from it only in its title page (ORCID and code-availability lines added, date line removed), one added funding sentence in the declarations, two end-of-proof marks and layout; its other wording, tables and numbers are identical.
 
 The earlier `publication_20261024` directory is the numerical research source. The final PDF was produced by `revised_manuscript_20261024` using presentation-stage copies of those results in `publication_zh_20261024`. These copies are not a new estimation run.
 

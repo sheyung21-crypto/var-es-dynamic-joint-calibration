@@ -1,6 +1,6 @@
 # Verification Report
 
-> Note (25 October 2026): after this verification, five module docstrings were edited (executable code unchanged, confirmed by syntax-tree comparison), the local path in two figure logs was replaced by `<package root>`, and the Study 2 protocol file was replaced by `provenance/Prespecified_Design.md`. The manuscript version of 25 October 2026 adds only the ORCID, code-availability and funding lines to the version identified below; its tables and numerical text are unchanged. See `provenance/Packaging_Changes.md`.
+> Note (25 October 2026): after this verification, five module docstrings were edited (executable code unchanged, confirmed by syntax-tree comparison), the local path in two figure logs was replaced by `<package root>`, and the Study 2 protocol file was replaced by `provenance/Prespecified_Design.md`. The final manuscript PDF differs from the build identified below only in its title page (ORCID and code-availability lines added, date line removed), one added funding sentence in the declarations, two end-of-proof marks and layout; its other wording, tables and numbers are unchanged. See `provenance/Packaging_Changes.md`.
 
 This report concerns reproducibility of the completed 26-page VaR/ES manuscript, identified by SHA-256 `86f29e6265870500ec6f4f653a1622fb0ba96dcc6512dffbba10b2f0104678d4`. The manuscript and original research files were not edited. Execution took place on 25 October 2026 using CPython 3.11.9 on 64-bit Windows. All model parameters, seeds and original estimator functions were retained.
 
