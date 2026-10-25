@@ -1,0 +1,68 @@
+{
+  "date": "2026-10-25",
+  "status": "COMPLETE_WITH_DOCUMENTED_LIMITS",
+  "paper_sha256": "86f29e6265870500ec6f4f653a1622fb0ba96dcc6512dffbba10b2f0104678d4",
+  "python": "3.11.9",
+  "platform": "Windows-10-10.0.26200-SP0",
+  "architecture": "AMD64",
+  "study1_full_replay": {
+    "exit_code": 0,
+    "seconds": 1571.1,
+    "series": 36,
+    "refit_failures": 2,
+    "csv_files_compared": 10
+  },
+  "study2_full_replay": {
+    "exit_code": 0,
+    "arrays_compared": 106,
+    "arrays_exact": 106
+  },
+  "isolated_full_package_passed": true,
+  "isolated_execution": {
+    "steps": [
+      {
+        "command": [
+          "code/data/manage_inputs.py",
+          "import-study1"
+        ],
+        "exit_code": 0,
+        "elapsed_seconds": 0.3314085006713867
+      },
+      {
+        "command": [
+          "code/reproduce.py",
+          "study1"
+        ],
+        "exit_code": 0,
+        "elapsed_seconds": 1419.826138496399
+      },
+      {
+        "command": [
+          "code/reproduce.py",
+          "audit-study1"
+        ],
+        "exit_code": 0,
+        "elapsed_seconds": 5.285629749298096
+      },
+      {
+        "command": [
+          "code/reproduce.py",
+          "review"
+        ],
+        "exit_code": 0,
+        "elapsed_seconds": 15.407429218292236
+      }
+    ],
+    "elapsed_seconds": 1440.8506059646606,
+    "all_passed": true
+  },
+  "csv_columns": 427,
+  "exact_csv_columns": 415,
+  "csv_columns_within_absolute_1e12": 427,
+  "maximum_csv_absolute_error": 1.3322676295501878e-15,
+  "paper_cells_matched": 580,
+  "additional_paper_claims_matched": 49,
+  "future_perturbation_checks_passed": 38,
+  "summary_replay": "The models in both studies were re-estimated from the original inputs using the fixed settings, including the 36-series Study 1 panel, the historical-yen models, calibration, backtests and 9,999-draw bootstrap inference. Study 1 completed in 1571.1 seconds; its ten numerical CSV outputs were compared with the archive. No parameters were changed. All checked values agree at the precision reported in the manuscript.",
+  "summary_isolation": "A new Python 3.11.9 virtual environment installed the 17 packages at the recorded versions and passed pip check. The package was copied outside the source repository and run with isolated Python imports. Study 2 was refitted and its inference, tables and figures were regenerated successfully. The full Study 1 pipeline also completed there in 1419.8 seconds after authorized inputs were imported and hash-verified. All commands in the isolated replay sequences returned exit status 0. The package therefore executed without imports from the original research checkout."
+}

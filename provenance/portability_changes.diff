@@ -1,0 +1,220 @@
+--- publication_20261024/scripts/study2.py
++++ code/pipeline/study2.py
+@@ -21,14 +21,14 @@
+ import scipy
+ import arch
+ 
+-ROOT = Path(__file__).resolve().parents[1]
+-SOURCE = ROOT / 'source_archive' / 'research_run'
++ROOT = Path(__file__).resolve().parents[2]
++SOURCE = ROOT / 'code' / 'core'
+ sys.path.insert(0, str(SOURCE / 'confirm'))
+ import confirm_run as frozen
+ 
+ URL = 'https://fred.stlouisfed.org/graph/?g=1&cosd=1974-01-02&coed=2009-12-31&id=DEXJPUS'
+ CSV_URL = 'https://fred.stlouisfed.org/graph/fredgraph.csv?id=DEXJPUS&cosd=1974-01-02&coed=2009-12-31'
+-DATA = ROOT / 'data' / 'DEXJPUS_1974_2009.csv'
++DATA = ROOT / 'data' / 'study2' / 'DEXJPUS_1974_2009.csv'
+ 
+ def sha(path):
+     return hashlib.sha256(Path(path).read_bytes()).hexdigest()
+@@ -40,7 +40,7 @@
+     return subprocess.check_output(['git', *args], cwd=ROOT, text=True).strip()
+ 
+ def fetch():
+-    protocol = ROOT / 'STUDY2_PROTOCOL.md'
++    protocol = ROOT / 'provenance' / 'STUDY2_PROTOCOL.md'
+     tracked = git('show', 'HEAD:publication_20261024/STUDY2_PROTOCOL.md')
+     if tracked.replace('\r\n', '\n') != protocol.read_text(encoding='utf-8').strip():
+         raise RuntimeError('Current protocol must match committed protocol before download')
+@@ -231,8 +231,8 @@
+ 
+ def main():
+     p=argparse.ArgumentParser(); p.add_argument('action',choices=['fetch','forecast','summarize'])
+-    p.add_argument('--out',type=Path,default=ROOT/'results'/'study2_run1')
+-    p.add_argument('--summary',type=Path,default=ROOT/'results'/'study2_summary')
++    p.add_argument('--out',type=Path,default=ROOT/'outputs'/'reproduced'/'study2_run1')
++    p.add_argument('--summary',type=Path,default=ROOT/'outputs'/'reproduced'/'study2_summary')
+     args=p.parse_args()
+     if args.action=='fetch': fetch()
+     elif args.action=='forecast': forecast(args.out)
+--- publication_20261024/scripts/audit_study1.py
++++ code/validation/audit_study1.py
+@@ -7,10 +7,13 @@
+ import matplotlib
+ matplotlib.use('Agg')
+ import matplotlib.pyplot as plt
+-ROOT=Path(__file__).resolve().parents[1]
+-SRC=ROOT/'source_archive'/'research_run'
+-R=SRC/'confirm'/'results'
+-O=ROOT/'results'; A=ROOT/'audit'; F=ROOT/'figures'
++ROOT=Path(__file__).resolve().parents[2]
++import os
++SRC=Path(os.environ['VAR_STUDY1_DATA'])
++R=ROOT/'outputs/reference/study1'
++if (ROOT/'outputs/reproduced/study1/confirm_meta.json').exists():
++ R=ROOT/'outputs/reproduced/study1'
++O=ROOT/'outputs/reproduced/derived'; A=ROOT/'outputs/verification'; F=ROOT/'outputs/reproduced/legacy_figures'
+ for p in (O,A,F): p.mkdir(parents=True,exist_ok=True)
+ def save(df,name): df.to_csv(O/('study1_'+name+'.csv'),index=False,float_format='%.16g')
+ def holm(p):
+@@ -37,7 +40,7 @@
+ for _,s in p.groupby(['set','alpha']): p.loc[s.index,'p_holm_recomputed']=holm(s.p_one_sided.to_numpy())
+ p['holm_absolute_error']=abs(p.p_holm-p.p_holm_recomputed); save(p,'primary_audit'); save(tests,'all_archived_contrasts')
+ # Date split independently read from raw data; models are never run.
+-with zipfile.ZipFile(SRC/'confirm_data'/'french'/'30_Industry_Portfolios_daily_CSV.zip') as z:
++with zipfile.ZipFile(SRC/'french'/'30_Industry_Portfolios_daily_CSV.zip') as z:
+  lines=z.read(z.namelist()[0]).decode('latin-1').splitlines()
+ i=next(i for i,l in enumerate(lines) if 'Average Value Weighted Returns -- Daily' in l)
+ j=next(j for j in range(i+2,len(lines)) if not lines[j].strip()[:1].isdigit())
+@@ -46,7 +49,7 @@
+ raw={}
+ for n in f.columns[1:]:
+  v=f[n].to_numpy(float); raw[n]=dates.to_numpy()[np.isfinite(v)&~np.isin(v,[-99.99,-999])]
+-for path in sorted((SRC/'confirm_data'/'yahoo').glob('yahoo_*.json')):
++for path in sorted((SRC/'yahoo').glob('yahoo_*.json')):
+  r=json.loads(path.read_text())['chart']['result'][0]
+  d=pd.to_datetime(np.asarray(r['timestamp'])+r['meta']['gmtoffset'],unit='s').strftime('%Y-%m-%d')
+  v=pd.Series(r['indicators']['quote'][0]['close'],index=d,dtype=float); v=v[~v.index.duplicated(keep='last')]; v=v[np.isfinite(v)&(v>0)]
+@@ -105,7 +108,7 @@
+ fig.tight_layout()
+ for ext in ['pdf','png']: fig.savefig(F/f'study1_primary_contrasts.{ext}',dpi=180)
+ plt.close(fig)
+-audit=dict(verification_status='ANALYZED; archived-summary arithmetic verified',forecast_rerun=False,bootstrap_rerun=False,mean_rows_checked=len(check),mean_max_absolute_error=float(check.mean_absolute_error.max()),days_all_match=bool((check.days==check.archived_days).all()),holm_max_absolute_error=float(p.holm_absolute_error.max()),nw_p_max_absolute_error=float(check.nw_p_absolute_error.max()),raw_date_checks=len(df_dates),raw_dates_all_match=bool(df_dates.match.all()),risk_breach_max_absolute_error=float(risk.breach_absolute_error.max()),risk_z2_max_absolute_error=float(risk.z2_absolute_error.max()),archived_legality_flags_all_true=bool(metrics.legal.all()),critical_errors_identified=[],source_sha256={str(x.relative_to(SRC)):hashlib.sha256(x.read_bytes()).hexdigest() for x in sorted(R.glob('*.csv'))},versions=dict(python=platform.python_version(),numpy=np.__version__,pandas=pd.__version__))
++audit=dict(verification_status='ANALYZED; archived-summary arithmetic verified',forecast_rerun=False,bootstrap_rerun=False,mean_rows_checked=len(check),mean_max_absolute_error=float(check.mean_absolute_error.max()),days_all_match=bool((check.days==check.archived_days).all()),holm_max_absolute_error=float(p.holm_absolute_error.max()),nw_p_max_absolute_error=float(check.nw_p_absolute_error.max()),raw_date_checks=len(df_dates),raw_dates_all_match=bool(df_dates.match.all()),risk_breach_max_absolute_error=float(risk.breach_absolute_error.max()),risk_z2_max_absolute_error=float(risk.z2_absolute_error.max()),archived_legality_flags_all_true=bool(metrics.legal.all()),critical_errors_identified=[],source_sha256={str(x.relative_to(ROOT)):hashlib.sha256(x.read_bytes()).hexdigest() for x in sorted(R.glob('*.csv'))},versions=dict(python=platform.python_version(),numpy=np.__version__,pandas=pd.__version__))
+ (A/'study1_audit.json').write_text(json.dumps(audit,indent=2)+'\n',encoding='utf-8')
+ assert audit['mean_max_absolute_error']<1e-12 and audit['holm_max_absolute_error']<1e-12 and audit['raw_dates_all_match'] and audit['days_all_match']
+ print(json.dumps({k:v for k,v in audit.items() if k!='source_sha256'},indent=2))
+--- publication_20261024/scripts/verify_study2.py
++++ code/validation/verify_study2.py
+@@ -4,8 +4,8 @@
+ import numpy as np
+ import pandas as pd
+ import statsmodels.api as sm
+-ROOT=Path(__file__).resolve().parents[1]
+-RUN=ROOT/'results/study2_run1'; SUM=ROOT/'results/study2_summary'
++ROOT=Path(__file__).resolve().parents[2]
++RUN=ROOT/'outputs/reproduced/study2_run1'; SUM=ROOT/'outputs/reproduced/study2_summary'
+ z=np.load(RUN/'forecasts.npz',allow_pickle=False)
+ dd=pd.read_csv(SUM/'descriptive_daily.csv')
+ reg=pd.read_csv(SUM/'signal_regression.csv').set_index('alpha')
+@@ -53,11 +53,11 @@
+ mean=np.mean(z['fz_0.025_A2']-z['fz_0.025_A0'])
+ assert abs(mean-verdict['primary']['mean'])<1e-14
+ assert verdict['primary']['p_one_sided']==.1973 and not verdict['confirmed'] and not verdict['holm_applied']
+-receipt=json.loads((ROOT/'data/fetch_manifest.json').read_text(encoding='utf-8'))
+-assert hashlib.sha256((ROOT/'data/DEXJPUS_1974_2009.csv').read_bytes()).hexdigest()==receipt['sha256']
++receipt=json.loads((ROOT/'data/study2/fetch_manifest.json').read_text(encoding='utf-8'))
++assert hashlib.sha256((ROOT/'data/study2/DEXJPUS_1974_2009.csv').read_bytes()).hexdigest()==receipt['sha256']
+ report['checks']['primary_mean_and_decision']='consistent with saved first analysis'
+ report['notes']=['Bootstrap p-value is audited from its frozen algorithm/seed and saved first execution, not recomputed here.',
+ 'Normal intervals used 1.96 as specified; no t-distribution or finite-sample covariance adjustment.',
+ 'Raw input and forecast hashes match receipts; no 2010+ data entered this run.']
+-(ROOT/'audit/study2_validation.json').write_text(json.dumps(report,indent=2),encoding='utf-8')
++(ROOT/'outputs/verification/study2_validation.json').write_text(json.dumps(report,indent=2),encoding='utf-8')
+ print(json.dumps(report,indent=2))
+--- publication_20261024/scripts/build_tables_figures.py
++++ code/reporting/build_tables_figures.py
+@@ -6,9 +6,11 @@
+ import matplotlib
+ matplotlib.use('Agg')
+ import matplotlib.pyplot as plt
+-ROOT=Path(__file__).resolve().parents[1]
+-SRC=ROOT/'source_archive/research_run/confirm/results'
+-TAB=ROOT/'paper/tables'; FIG=ROOT/'figures'
++ROOT=Path(__file__).resolve().parents[2]
++SRC=ROOT/'outputs/reproduced/study1'
++if not (SRC/'confirm_meta.json').exists():
++    SRC=ROOT/'outputs/reference/study1'
++TAB=ROOT/'outputs/reproduced/table_sources'; FIG=ROOT/'outputs/reproduced/legacy_figures'
+ TAB.mkdir(parents=True,exist_ok=True); FIG.mkdir(parents=True,exist_ok=True)
+ plt.rcParams.update({'font.family':'DejaVu Sans','font.size':10,'axes.spines.top':False,'axes.spines.right':False,'axes.grid':True,'grid.alpha':.18,'pdf.fonttype':42})
+ def esc(v): return str(v).replace('_',r'\_').replace('%',r'\%')
+@@ -62,7 +64,7 @@
+       ['Panel','Level','Contrast','Mean','95\\% interval','Raw $p$','Holm $p$'],
+       [[r['set'],f'{100*(1-r.alpha):g}\\%',r.contrast,num(r['mean']),interval(r),num(r.p_one_sided),num(r.p_holm)] for _,r in s99.iterrows()],
+       'Holm at 99\\% is the archived within-level calculation; index results were not multiplicity-adjusted.')
+-s2=ROOT/'results/study2_summary'; run=ROOT/'results/study2_run1'
++s2=ROOT/'outputs/reproduced/study2_summary'; run=ROOT/'outputs/reproduced/study2_run1'
+ tt=pd.read_csv(s2/'tests.csv')
+ table('study2_tests','Historical yen: A2--A0 and block sensitivities','tab:study2tests',
+       ['Level','Block','Mean','95\\% interval','One-sided $p$'],
+--- revised_manuscript_20261024/scripts/tables.py
++++ code/reporting/paper_tables.py
+@@ -7,8 +7,8 @@
+ from pathlib import Path
+ import csv
+ 
+-ROOT = Path(__file__).resolve().parents[1]
+-SRC = ROOT.parent / "publication_zh_20261024" / "source_en" / "paper" / "tables"
++ROOT = Path(__file__).resolve().parents[2]
++SRC = ROOT / "outputs/reproduced/table_sources"
+ 
+ ARM = {"A0": "EW", "A1": "EW+BCm", "A1d": "EW+BCd", "A2": "EW+DJC", "A3": "EW+YE",
+        "A3f": "EW+YEf", "F": "EW+DJC-FIX", "C0": "MCS", "C1": "MCS+BCm", "C1d": "MCS+BCd",
+--- revised_manuscript_20261024/scripts/figures.py
++++ code/reporting/paper_figures.py
+@@ -14,11 +14,11 @@
+ from matplotlib import font_manager
+ from matplotlib.patches import Patch
+ 
+-ROOT = Path(__file__).resolve().parents[1]
+-SRC = ROOT.parent / "publication_zh_20261024"
++ROOT = Path(__file__).resolve().parents[2]
++SRC = ROOT / "outputs/reproduced"
+ DATA = SRC / "plot_data"
+ CJK_FONT = SRC / "paper" / "fonts" / "NotoSerifCJKtc-Regular.otf"
+-OUT = ROOT / "figures"
++OUT = ROOT / "outputs/reproduced/figures"
+ OUT.mkdir(exist_ok=True)
+ 
+ BLUE, ORANGE, SHADE, CRISIS = "#135E79", "#B15C2E", "#8AB6C2", "#E8A87C"
+@@ -192,12 +192,25 @@
+ 
+ 
+ def main():
+-    daily = pd.read_csv(DATA / "confirm_daily_means.csv")
+-    yen = pd.read_csv(DATA / "descriptive_daily.csv")
+-    series = pd.read_csv(DATA / "study1_exploratory_series.csv")
+-    metrics = pd.read_csv(SRC / "source_en" / "paper" / "tables" / "study1_metrics.csv")
++    study1 = SRC / "study1"
++    if not (study1 / "confirm_meta.json").exists():
++        study1 = ROOT / "outputs/reference/study1"
++    daily = pd.read_csv(study1 / "confirm_daily_means.csv")
++    yen = pd.read_csv(SRC / "study2_summary/descriptive_daily.csv")
++    # Derive the same Figure 4 coordinates from the selected result set, including
++    # when the review path has no raw Study 1 files for the independent date audit.
++    per_series = pd.read_csv(study1 / "confirm_series_metrics.csv")
++    rows = []
++    for (name, alpha), group in per_series[per_series.period == "main"].groupby(["name", "alpha"]):
++        group = group.set_index("group")
++        a, b = group.loc["A0"], group.loc["A2"]
++        rows.append({"name": name, "alpha": alpha, "class": a["class"],
++                     "a0_breach_excess": a.breach_rate-alpha, "a0_z2": a.z2,
++                     "d_a2_minus_a0": b.fz_mean-a.fz_mean})
++    series = pd.DataFrame(rows)
++    metrics = pd.read_csv(SRC / "table_sources" / "study1_metrics.csv")
+     metrics.columns = ["arm", "fz975", "v975", "z975", "fz99", "v99", "z99"]
+-    for lang, L in LABELS.items():
++    for lang, L in [("en", LABELS["en"])]:
+         setup(lang)
+         tradeoff(lang, L, metrics)
+         cumulative_industries(lang, L, daily)
+--- publication_20261024/requirements.txt
++++ requirements.txt
+@@ -3,3 +3,15 @@
+ scipy==1.17.1
+ arch==8.0.0
+ matplotlib==3.11.0
++statsmodels==0.14.6
++contourpy==1.3.3
++cycler==0.12.1
++fonttools==4.62.1
++kiwisolver==1.5.0
++packaging==26.0
++patsy==1.0.2
++Pillow==12.1.1
++pyparsing==3.3.2
++python-dateutil==2.9.0.post0
++six==1.17.0
++tzdata==2025.3

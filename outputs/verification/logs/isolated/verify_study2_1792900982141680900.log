@@ -1,0 +1,32 @@
+{
+  "scope": "saved forecasts, timing, score/metrics, independent HAC library check; no model rerun",
+  "checks": {
+    "split": {
+      "first": "1985-12-24",
+      "last": "2009-12-31",
+      "days": 6043
+    },
+    "independent_statsmodels_0146_hac": [
+      {
+        "alpha": 0.025,
+        "slope_gap": 4.440892098500626e-16,
+        "se_gap": 3.552713678800501e-15
+      },
+      {
+        "alpha": 0.01,
+        "slope_gap": 1.7763568394002505e-15,
+        "se_gap": 2.886579864025407e-14
+      }
+    ],
+    "all_26_main_forecast_paths": "legal; score, breach and Z2 agree with saved metrics",
+    "signal_250_day_alignment": "all evaluation dates verified by independent full-array slicing",
+    "sixty_day_returns": "all evaluation dates verified by direct summation",
+    "conservatism_and_weights": "valid",
+    "primary_mean_and_decision": "consistent with saved first analysis"
+  },
+  "notes": [
+    "Bootstrap p-value is audited from its frozen algorithm/seed and saved first execution, not recomputed here.",
+    "Normal intervals used 1.96 as specified; no t-distribution or finite-sample covariance adjustment.",
+    "Raw input and forecast hashes match receipts; no 2010+ data entered this run."
+  ]
+}

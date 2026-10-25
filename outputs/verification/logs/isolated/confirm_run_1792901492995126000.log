@@ -1,0 +1,94 @@
+forecasts done in 1098s
+{
+  "industries@0.025": {
+    "significant_after_holm": {
+      "H1": false,
+      "H2": true,
+      "H3": true
+    },
+    "risk_cost_acceptable": false,
+    "section6_row": "H1 不成立：D1 未達標，照實報告；不在確認資料上重調"
+  },
+  "industries@0.01": {
+    "significant_after_holm": {
+      "H1": false,
+      "H2": true,
+      "H3": false
+    },
+    "risk_cost_acceptable": false,
+    "section6_row": "H1 不成立：D1 未達標，照實報告；不在確認資料上重調"
+  }
+}
+       set  alpha               kind       contrast  days     mean   ci_low  ci_high  p_one_sided
+industries  0.025            primary             H1 12897 -0.00788 -0.01968  0.00185       0.0861
+industries  0.025            primary             H2 12897 -0.02083 -0.03055 -0.01254       0.0002
+industries  0.025            primary             H3 12897 -0.00803 -0.01597 -0.00165       0.0239
+industries  0.025          secondary        A2_vs_F 12897 -0.01014 -0.01367 -0.00709       0.0001
+industries  0.025          secondary       A2_vs_A1 12897 -0.02448 -0.03607 -0.01459       0.0003
+industries  0.025          secondary      A2_vs_A3f 12897 -0.00985 -0.01338 -0.00656       0.0001
+industries  0.025          secondary       A2_vs_R0 12897  0.01562  0.00406  0.02649       0.9979
+industries  0.025          secondary       C2_vs_C0 12897 -0.00580 -0.01624  0.00295       0.1221
+industries  0.025          secondary       C0_vs_A0 12897 -0.00946 -0.01632 -0.00260       0.0036
+industries  0.025          secondary     C1d_vs_A1d 12897 -0.01339 -0.02001 -0.00719       0.0001
+industries  0.025          secondary       C2_vs_A2 12897 -0.00738 -0.01266 -0.00196       0.0026
+industries  0.025          secondary       C3_vs_A3 12897 -0.01085 -0.01727 -0.00478       0.0004
+industries  0.025 robust_2000_window             H1 10897 -0.00823 -0.02168  0.00267       0.1014
+industries  0.025 robust_2000_window             H2 10897 -0.01311 -0.02421 -0.00462       0.0109
+industries  0.025 robust_2000_window             H3 10897 -0.00838 -0.01740 -0.00124       0.0323
+industries  0.025 robust_2000_window H2_main_window 10897 -0.01968 -0.03032 -0.01067       0.0004
+industries  0.025 robust_2000_window       C0_vs_A0 10897 -0.02156 -0.03383 -0.01018       0.0007
+industries  0.025 robust_2000_window       C2_vs_A2 10897 -0.01627 -0.02542 -0.00741       0.0006
+industries  0.010            primary             H1 12897 -0.01380 -0.03961  0.00699       0.1242
+industries  0.010            primary             H2 12897 -0.03584 -0.05258 -0.02117       0.0003
+industries  0.010            primary             H3 12897 -0.01144 -0.03152  0.00337       0.1109
+industries  0.010          secondary        A2_vs_F 12897 -0.02477 -0.03227 -0.01701       0.0001
+industries  0.010          secondary       A2_vs_A1 12897 -0.04209 -0.06406 -0.02427       0.0006
+industries  0.010          secondary      A2_vs_A3f 12897 -0.01589 -0.02760 -0.00717       0.0061
+industries  0.010          secondary       A2_vs_R0 12897  0.01617 -0.00418  0.03533       0.9499
+industries  0.010          secondary       C2_vs_C0 12897 -0.01245 -0.03654  0.00673       0.1384
+industries  0.010          secondary       C0_vs_A0 12897 -0.00839 -0.01677  0.00005       0.0246
+industries  0.010          secondary     C1d_vs_A1d 12897 -0.01386 -0.02253 -0.00589       0.0010
+industries  0.010          secondary       C2_vs_A2 12897 -0.00704 -0.01379 -0.00048       0.0198
+industries  0.010          secondary       C3_vs_A3 12897 -0.01045 -0.01858 -0.00230       0.0073
+industries  0.010 robust_2000_window             H1 10897 -0.01417 -0.04427  0.00947       0.1425
+industries  0.010 robust_2000_window             H2 10897 -0.02281 -0.04478 -0.00641       0.0221
+industries  0.010 robust_2000_window             H3 10897 -0.01167 -0.03454  0.00529       0.1385
+industries  0.010 robust_2000_window H2_main_window 10897 -0.03473 -0.05448 -0.01874       0.0009
+industries  0.010 robust_2000_window       C0_vs_A0 10897 -0.02119 -0.03583 -0.00706       0.0034
+industries  0.010 robust_2000_window       C2_vs_A2 10897 -0.01506 -0.02535 -0.00456       0.0019
+   indices  0.025        replication             H1  9119 -0.01165 -0.02444 -0.00047       0.0356
+   indices  0.025        replication             H2  9119 -0.01809 -0.02697 -0.00994       0.0001
+   indices  0.025        replication             H3  9119 -0.00931 -0.01731 -0.00245       0.0127
+   indices  0.025          secondary        A2_vs_F  9119 -0.00977 -0.01353 -0.00643       0.0001
+   indices  0.025          secondary       A2_vs_A1  9119 -0.02217 -0.03241 -0.01280       0.0001
+   indices  0.025          secondary      A2_vs_A3f  9119 -0.01020 -0.01382 -0.00670       0.0001
+   indices  0.025          secondary       A2_vs_R0  9119  0.02359  0.00527  0.04050       0.9963
+   indices  0.025          secondary       C2_vs_C0  9119 -0.00515 -0.01481  0.00395       0.1435
+   indices  0.025          secondary       C0_vs_A0  9119 -0.02474 -0.03833 -0.01171       0.0006
+   indices  0.025          secondary     C1d_vs_A1d  9119 -0.02445 -0.03704 -0.01253       0.0001
+   indices  0.025          secondary       C2_vs_A2  9119 -0.01825 -0.02873 -0.00782       0.0006
+   indices  0.025          secondary       C3_vs_A3  9119 -0.02623 -0.03898 -0.01380       0.0001
+   indices  0.025 robust_2000_window             H1  2335 -0.02361 -0.06101  0.00565       0.0918
+   indices  0.025 robust_2000_window             H2  2335 -0.01999 -0.04552 -0.00201       0.0524
+   indices  0.025 robust_2000_window             H3  2335 -0.01647 -0.04005  0.00054       0.0733
+   indices  0.025 robust_2000_window H2_main_window  2335 -0.02903 -0.05484 -0.00780       0.0159
+   indices  0.025 robust_2000_window       C0_vs_A0  2335 -0.05905 -0.11555 -0.01291       0.0209
+   indices  0.025 robust_2000_window       C2_vs_A2  2335 -0.04026 -0.07794 -0.00643       0.0188
+   indices  0.010        replication             H1  9119 -0.01528 -0.04112  0.00600       0.1065
+   indices  0.010        replication             H2  9119 -0.02969 -0.04672 -0.01488       0.0008
+   indices  0.010        replication             H3  9119 -0.01026 -0.02874  0.00419       0.1208
+   indices  0.010          secondary        A2_vs_F  9119 -0.01176 -0.01890 -0.00490       0.0009
+   indices  0.010          secondary       A2_vs_A1  9119 -0.03364 -0.05335 -0.01655       0.0008
+   indices  0.010          secondary      A2_vs_A3f  9119 -0.01253 -0.02252 -0.00480       0.0088
+   indices  0.010          secondary       A2_vs_R0  9119  0.01780 -0.01100  0.04612       0.8925
+   indices  0.010          secondary       C2_vs_C0  9119 -0.01116 -0.03176  0.00628       0.1327
+   indices  0.010          secondary       C0_vs_A0  9119 -0.01986 -0.03920 -0.00107       0.0224
+   indices  0.010          secondary     C1d_vs_A1d  9119 -0.02205 -0.04014 -0.00407       0.0097
+   indices  0.010          secondary       C2_vs_A2  9119 -0.01573 -0.03006 -0.00133       0.0154
+   indices  0.010          secondary       C3_vs_A3  9119 -0.02039 -0.03818 -0.00303       0.0126
+   indices  0.010 robust_2000_window             H1  2335 -0.04359 -0.13575  0.02071       0.1368
+   indices  0.010 robust_2000_window             H2  2335 -0.04047 -0.09273 -0.00560       0.0536
+   indices  0.010 robust_2000_window             H3  2335 -0.03195 -0.09498  0.00975       0.1227
+   indices  0.010 robust_2000_window H2_main_window  2335 -0.05691 -0.11156 -0.01543       0.0219
+   indices  0.010 robust_2000_window       C0_vs_A0  2335 -0.06204 -0.13569 -0.00208       0.0440
+   indices  0.010 robust_2000_window       C2_vs_A2  2335 -0.04647 -0.09181 -0.00750       0.0219

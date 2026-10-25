@@ -1,0 +1,38 @@
+{
+  "steps": [
+    {
+      "command": [
+        "code/data/manage_inputs.py",
+        "import-study1"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.3314085006713867
+    },
+    {
+      "command": [
+        "code/reproduce.py",
+        "study1"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 1419.826138496399
+    },
+    {
+      "command": [
+        "code/reproduce.py",
+        "audit-study1"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 5.285629749298096
+    },
+    {
+      "command": [
+        "code/reproduce.py",
+        "review"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 15.407429218292236
+    }
+  ],
+  "elapsed_seconds": 1440.8506059646606,
+  "all_passed": true
+}

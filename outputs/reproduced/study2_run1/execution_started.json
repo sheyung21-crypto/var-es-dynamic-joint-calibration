@@ -1,0 +1,23 @@
+{
+  "started_utc": "2026-10-25T03:44:23.539923+00:00",
+  "data_sha256": "90fa5f9af7dd2ba1754958b11114e41f48946efa440f8afc9f62b50a09a479b3",
+  "protocol_commit": "54a4ce2d1af16326cf0a14c93d555523b6135f11",
+  "source_hashes": {
+    "confirm\\confirm_run.py": "aaf98e688c2c21659149260f2bc100bd9620a00011cd201982ceca3adc477b3c",
+    "confirm\\freeze_params.py": "7dd6ee380a064d684ecbe5804e6284e685f924f571d70e8b322ebd1c2cdf25dd",
+    "devcheck_d1v2\\devcheck_d1v2.py": "2021987d7e9a5501ed84f708fba2d57a97a09b5209aa48632ca64c9f245aad5f",
+    "devcheck_round2\\devcheck_round2.py": "f041751a3eae727a2dc53fefd80a5ce021b1d3a0dc90617f9bac717ee150d798",
+    "devcheck_round3\\devcheck_round3.py": "63286872823909fc078fddbc96b8d09dea215d95cc098c92253bb6f9c27707fa",
+    "pilot5\\pilot.py": "71243a9e159391e126a6206a2c6dc02837b0d8b72b2b423c9f58d0590fbdaa71",
+    "quickcheck_d1\\quickcheck_d1.py": "c5ddf307604db9245a1f7cf682c56dd427a9dc6bc66db591ff4e6479846b60f3"
+  },
+  "script_sha256": "e07c80b4489b98c93ee2018e92fa06cc1dbec40c563941e7524bba7111eb864a",
+  "seed": 20261024,
+  "versions": {
+    "python": "3.11.9",
+    "numpy": "2.4.3",
+    "pandas": "3.0.1",
+    "scipy": "1.17.1",
+    "arch": "8.0.0"
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "date": "2026-10-25",
+  "pdfs": [
+    {
+      "file": "Data_Sources.pdf",
+      "pages": 4,
+      "sha256": "21f3bc5483cd5365ec3fa5611051db224017674a5b73a8e8ed46e33b8a84389d",
+      "visual_check": "PASS"
+    },
+    {
+      "file": "Research_Reproducibility_Summary.pdf",
+      "pages": 2,
+      "sha256": "c0531e479090e8384f76f5b618368c42cf4a2bbdabe9c0bb0679f7009555340b",
+      "visual_check": "PASS"
+    }
+  ],
+  "figures": [
+    {
+      "file": "outputs/reproduced/figures/fig_cumulative_industries_en.png",
+      "sha256": "45ea6b3c61a663080280cb80466569e2a16974bc8eca105fa84604ea7f1bc62f",
+      "visual_check": "PASS"
+    },
+    {
+      "file": "outputs/reproduced/figures/fig_cumulative_yen_en.png",
+      "sha256": "cef4d3ba8f6fd09980c2829643e21fe5f9e5d7ec78d5604ac7ceb066e0cc8dad",
+      "visual_check": "PASS"
+    },
+    {
+      "file": "outputs/reproduced/figures/fig_decades_en.png",
+      "sha256": "aa8a2b929e371482ad9152946100ded4f95addd10c35abb081237ff392484359",
+      "visual_check": "PASS"
+    },
+    {
+      "file": "outputs/reproduced/figures/fig_miscalibration_gain_en.png",
+      "sha256": "0689a1ed0efec54e195ec036bf5d17a37e61650fcd1a2d75647a5d9e6fff0552",
+      "visual_check": "PASS"
+    },
+    {
+      "file": "outputs/reproduced/figures/fig_tradeoff_en.png",
+      "sha256": "00fcbf7a20634ad82c669652de28e684096e5fb1565d4cf21d489562e8033543",
+      "visual_check": "PASS"
+    }
+  ],
+  "visual_assessment": "All documentation pages and all five final-paper figures were rendered and inspected. Text, tables, axes and legends are readable; no missing-glyph boxes or page-content clipping was found. Original scientific figure layouts were preserved.",
+  "documentation_revision_check": "Both documentation PDFs were re-rendered on 25 October 2026 and all six pages were visually inspected. Scientific figures are unchanged and retain the earlier inspection."
+}

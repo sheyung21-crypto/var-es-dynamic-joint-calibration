@@ -1,0 +1,13 @@
+file,column,n,exact,max_abs_error,within_1e12
+study1/confirm_crisis.csv,fz_mean,338,False,8.881784197001252e-16,True
+study1/confirm_h5.csv,z2_day_weighted,16,False,1.1102230246251563e-16,True
+derived/study1_crisis_contrasts.csv,d_a2_minus_a0,26,False,3.8857805861880484e-16,True
+derived/study1_methods.csv,breach_rate,52,False,1.006139616066548e-16,True
+derived/study1_methods.csv,z2,52,False,9.714451465470121e-17,True
+derived/study1_methods.csv,mean_abs_var,52,False,1.3322676295501878e-15,True
+derived/study1_methods.csv,mean_abs_es,52,False,1.3322676295501878e-15,True
+derived/study1_methods.csv,es_log_change,52,False,1.006139616066548e-16,True
+derived/study1_risk_audit.csv,recomputed_breach_rate,16,False,1.006139616066548e-16,True
+derived/study1_risk_audit.csv,breach_absolute_error,16,False,6.938893903907228e-18,True
+derived/study1_risk_audit.csv,archived_z2,16,False,1.1102230246251563e-16,True
+derived/study1_risk_audit.csv,z2_absolute_error,16,False,4.1633363423443364e-17,True

@@ -1,0 +1,9 @@
+﻿EW,Equal-weight combination of the ten base VaR and ES forecasts (uncalibrated)
+EW+DJC,DJC applied to EW
+EW+DJC-FIX,"The four DJC experts applied to EW, with weights fixed at 1/4"
+"EW+BCd, EW+BCm","Batch calibration of EW, re-estimated daily or every 20 trading days"
+"EW+YE, EW+YEf","Adapted Ye-type controller on EW, with step size 0.01 or 0.05"
+MCS,Equal-weight combination after MCS selection (uncalibrated)
+"MCS+DJC, MCS+BCd,
+MCS+BCm, MCS+YE",Each calibration method applied to the MCS combination
+GJR,Single GJR-GARCH-t model

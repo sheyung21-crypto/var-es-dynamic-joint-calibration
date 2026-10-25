@@ -1,0 +1,35 @@
+{
+  "status": "IMPORTED",
+  "copied": [
+    "data/study1/raw/french/30_Industry_Portfolios_daily_CSV.zip",
+    "data/study1/raw/yahoo/yahoo_TWII.json",
+    "data/study1/raw/yahoo/yahoo_KS11.json",
+    "data/study1/raw/yahoo/yahoo_FTSE.json",
+    "data/study1/raw/yahoo/yahoo_GDAXI.json",
+    "data/study1/raw/yahoo/yahoo_AXJO.json",
+    "data/study1/raw/yahoo/yahoo_GSPTSE.json",
+    "data/study1/raw/fetch_manifest.json"
+  ],
+  "already_matching": [],
+  "manifest": "data/study1/raw/fetch_manifest.json",
+  "note": "Importing does not confer data redistribution rights."
+}
+Running code/data/manage_inputs.py
+Exit 0; 0.2s; outputs\verification\logs\manage_inputs_1792901492765286100.log
+Running code/core/confirm/confirm_run.py
+Exit 0; 1419.5s; outputs\verification\logs\confirm_run_1792901492995126000.log
+Running code/validation/audit_study1.py
+Exit 0; 5.2s; outputs\verification\logs\audit_study1_1792902912586443400.log
+Running code/validation/verify_study2.py
+Exit 0; 2.6s; outputs\verification\logs\verify_study2_1792902917885587300.log
+Running code/reporting/build_tables_figures.py
+Exit 0; 3.3s; outputs\verification\logs\build_tables_figures_1792902920491378000.log
+Running code/reporting/paper_figures.py
+Exit 0; 6.7s; outputs\verification\logs\paper_figures_1792902923746391000.log
+Running code/reporting/export_paper_tables.py
+Exit 0; 0.2s; outputs\verification\logs\export_paper_tables_1792902930399470000.log
+Running code/validation/verify_paper_claims.py
+Exit 0; 1.0s; outputs\verification\logs\verify_paper_claims_1792902930568840900.log
+Running code/validation/compare_results.py
+Exit 0; 1.5s; outputs\verification\logs\compare_results_1792902931603940800.log
+Review path complete. Study 1 tables use replayed estimates; consult verification status.

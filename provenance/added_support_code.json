@@ -1,0 +1,37 @@
+[
+  {
+    "path": "code/data/manage_inputs.py",
+    "sha256": "39395fafee83301059c979bc54c91d69ac111fe59b4f82eb30f268c968767a02",
+    "role": "New orchestration or verification; no new model."
+  },
+  {
+    "path": "code/reporting/export_paper_tables.py",
+    "sha256": "47de4b9b2695dd62fe0f4e6aa72b7251289098c7fb2429c7e98dbaf4d3ad986b",
+    "role": "New orchestration or verification; no new model."
+  },
+  {
+    "path": "code/reproduce.py",
+    "sha256": "e636a8c0d68e70f4ed9bf2fb78d050720a48cce652a262e4f73e0582d39e3065",
+    "role": "New orchestration or verification; no new model."
+  },
+  {
+    "path": "code/validation/check_integrity.py",
+    "sha256": "0acee73d0fade736f896979a314d27b6246a8c3e8a72a7c9438c40f6075ebea3",
+    "role": "New orchestration or verification; no new model."
+  },
+  {
+    "path": "code/validation/compare_results.py",
+    "sha256": "72500b33c4b9cdb8b1d7c9f1adb3f1c20ae83c802df5956a013d71a1a1adc930",
+    "role": "New orchestration or verification; no new model."
+  },
+  {
+    "path": "code/validation/leakage_checks.py",
+    "sha256": "e9cf01e5ad00846fa397702ff083ef03b593d5e8bf0dc1db0512d96c657092cd",
+    "role": "New orchestration or verification; no new model."
+  },
+  {
+    "path": "code/validation/verify_paper_claims.py",
+    "sha256": "e2432e0bc083933e0833f48062120c68c72d48f000215e2f1ad4612f716e6e86",
+    "role": "New orchestration or verification; no new model."
+  }
+]

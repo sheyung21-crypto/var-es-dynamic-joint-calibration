@@ -1,0 +1,42 @@
+{
+  "source": "devcheck3_daily.csv (A0, AGG_eta2.0, Ye_step0.01) and devcheck2_daily.csv (A1d); equal-weight average of SP500, DJIA, NASDAQCOM on their common dates",
+  "a0_round2_vs_round3_max_abs_gap": 0.0,
+  "block_lengths": {
+    "H1@0.025": {
+      "block": 3.26,
+      "days": 1261,
+      "first": "2021-10-13",
+      "last": "2026-10-21"
+    },
+    "H2@0.025": {
+      "block": 2.8,
+      "days": 1261,
+      "first": "2021-10-13",
+      "last": "2026-10-21"
+    },
+    "H3@0.025": {
+      "block": 2.88,
+      "days": 1261,
+      "first": "2021-10-13",
+      "last": "2026-10-21"
+    },
+    "H1@0.01": {
+      "block": 5.05,
+      "days": 1261,
+      "first": "2021-10-13",
+      "last": "2026-10-21"
+    },
+    "H2@0.01": {
+      "block": 3.33,
+      "days": 1261,
+      "first": "2021-10-13",
+      "last": "2026-10-21"
+    },
+    "H3@0.01": {
+      "block": 5.05,
+      "days": 1261,
+      "first": "2021-10-13",
+      "last": "2026-10-21"
+    }
+  }
+}

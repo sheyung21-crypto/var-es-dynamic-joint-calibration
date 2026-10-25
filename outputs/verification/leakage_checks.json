@@ -1,0 +1,278 @@
+{
+  "scope": "Finite perturbation checks of frozen algorithms; not proof for every possible path.",
+  "perturbation": "Changed current/future returns at stated cutoffs; compared all forecasts through the cutoff.",
+  "checks": [
+    {
+      "check": "base_q_0.025_through_return_2101",
+      "elements": 11010,
+      "exact": true,
+      "max_abs_error": 0.0,
+      "pass": true
+    },
+    {
+      "check": "base_e_0.025_through_return_2101",
+      "elements": 11010,
+      "exact": true,
+      "max_abs_error": 0.0,
+      "pass": true
+    },
+    {
+      "check": "base_q_0.01_through_return_2101",
+      "elements": 11010,
+      "exact": true,
+      "max_abs_error": 0.0,
+      "pass": true
+    },
+    {
+      "check": "base_e_0.01_through_return_2101",
+      "elements": 11010,
+      "exact": true,
+      "max_abs_error": 0.0,
+      "pass": true
+    },
+    {
+      "check": "mcs_q_0.025",
+      "elements": 2101,
+      "exact": true,
+      "max_abs_error": 0.0,
+      "pass": true
+    },
+    {
+      "check": "mcs_e_0.025",
+      "elements": 2101,
+      "exact": true,
+      "max_abs_error": 0.0,
+      "pass": true
+    },
+    {
+      "check": "A0_q_0.025",
+      "elements": 1101,
+      "exact": true,
+      "max_abs_error": 0.0,
+      "pass": true
+    },
+    {
+      "check": "A0_e_0.025",
+      "elements": 1101,
+      "exact": true,
+      "max_abs_error": 0.0,
+      "pass": true
+    },
+    {
+      "check": "A1_q_0.025",
+      "elements": 1101,
+      "exact": true,
+      "max_abs_error": 0.0,
+      "pass": true
+    },
+    {
+      "check": "A1_e_0.025",
+      "elements": 1101,
+      "exact": true,
+      "max_abs_error": 0.0,
+      "pass": true
+    },
+    {
+      "check": "A1d_q_0.025",
+      "elements": 1101,
+      "exact": true,
+      "max_abs_error": 0.0,
+      "pass": true
+    },
+    {
+      "check": "A1d_e_0.025",
+      "elements": 1101,
+      "exact": true,
+      "max_abs_error": 0.0,
+      "pass": true
+    },
+    {
+      "check": "A2_q_0.025",
+      "elements": 1101,
+      "exact": true,
+      "max_abs_error": 0.0,
+      "pass": true
+    },
+    {
+      "check": "A2_e_0.025",
+      "elements": 1101,
+      "exact": true,
+      "max_abs_error": 0.0,
+      "pass": true
+    },
+    {
+      "check": "A3_q_0.025",
+      "elements": 1101,
+      "exact": true,
+      "max_abs_error": 0.0,
+      "pass": true
+    },
+    {
+      "check": "A3_e_0.025",
+      "elements": 1101,
+      "exact": true,
+      "max_abs_error": 0.0,
+      "pass": true
+    },
+    {
+      "check": "A3f_q_0.025",
+      "elements": 1101,
+      "exact": true,
+      "max_abs_error": 0.0,
+      "pass": true
+    },
+    {
+      "check": "A3f_e_0.025",
+      "elements": 1101,
+      "exact": true,
+      "max_abs_error": 0.0,
+      "pass": true
+    },
+    {
+      "check": "F_q_0.025",
+      "elements": 1101,
+      "exact": true,
+      "max_abs_error": 0.0,
+      "pass": true
+    },
+    {
+      "check": "F_e_0.025",
+      "elements": 1101,
+      "exact": true,
+      "max_abs_error": 0.0,
+      "pass": true
+    },
+    {
+      "check": "aggregation_weights_0.025",
+      "elements": 4404,
+      "exact": true,
+      "max_abs_error": 0.0,
+      "pass": true
+    },
+    {
+      "check": "mcs_q_0.01",
+      "elements": 2101,
+      "exact": true,
+      "max_abs_error": 0.0,
+      "pass": true
+    },
+    {
+      "check": "mcs_e_0.01",
+      "elements": 2101,
+      "exact": true,
+      "max_abs_error": 0.0,
+      "pass": true
+    },
+    {
+      "check": "A0_q_0.01",
+      "elements": 1101,
+      "exact": true,
+      "max_abs_error": 0.0,
+      "pass": true
+    },
+    {
+      "check": "A0_e_0.01",
+      "elements": 1101,
+      "exact": true,
+      "max_abs_error": 0.0,
+      "pass": true
+    },
+    {
+      "check": "A1_q_0.01",
+      "elements": 1101,
+      "exact": true,
+      "max_abs_error": 0.0,
+      "pass": true
+    },
+    {
+      "check": "A1_e_0.01",
+      "elements": 1101,
+      "exact": true,
+      "max_abs_error": 0.0,
+      "pass": true
+    },
+    {
+      "check": "A1d_q_0.01",
+      "elements": 1101,
+      "exact": true,
+      "max_abs_error": 0.0,
+      "pass": true
+    },
+    {
+      "check": "A1d_e_0.01",
+      "elements": 1101,
+      "exact": true,
+      "max_abs_error": 0.0,
+      "pass": true
+    },
+    {
+      "check": "A2_q_0.01",
+      "elements": 1101,
+      "exact": true,
+      "max_abs_error": 0.0,
+      "pass": true
+    },
+    {
+      "check": "A2_e_0.01",
+      "elements": 1101,
+      "exact": true,
+      "max_abs_error": 0.0,
+      "pass": true
+    },
+    {
+      "check": "A3_q_0.01",
+      "elements": 1101,
+      "exact": true,
+      "max_abs_error": 0.0,
+      "pass": true
+    },
+    {
+      "check": "A3_e_0.01",
+      "elements": 1101,
+      "exact": true,
+      "max_abs_error": 0.0,
+      "pass": true
+    },
+    {
+      "check": "A3f_q_0.01",
+      "elements": 1101,
+      "exact": true,
+      "max_abs_error": 0.0,
+      "pass": true
+    },
+    {
+      "check": "A3f_e_0.01",
+      "elements": 1101,
+      "exact": true,
+      "max_abs_error": 0.0,
+      "pass": true
+    },
+    {
+      "check": "F_q_0.01",
+      "elements": 1101,
+      "exact": true,
+      "max_abs_error": 0.0,
+      "pass": true
+    },
+    {
+      "check": "F_e_0.01",
+      "elements": 1101,
+      "exact": true,
+      "max_abs_error": 0.0,
+      "pass": true
+    },
+    {
+      "check": "aggregation_weights_0.01",
+      "elements": 4404,
+      "exact": true,
+      "max_abs_error": 0.0,
+      "pass": true
+    }
+  ],
+  "all_pass": true,
+  "limits": [
+    "Historical source vintages are not point-in-time vintage data.",
+    "Full-period state/tertile thresholds are retrospective descriptive analyses, not forecasting inputs.",
+    "Provider revisions and external selection bias are outside these computational timing tests."
+  ]
+}

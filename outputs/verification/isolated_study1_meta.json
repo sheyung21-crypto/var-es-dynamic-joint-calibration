@@ -1,0 +1,632 @@
+{
+  "mode": "confirmation (single frozen run)",
+  "git_commit": "",
+  "uncommitted_changes_in_used_code_at_start": "",
+  "verdict": {
+    "industries@0.025": {
+      "significant_after_holm": {
+        "H1": false,
+        "H2": true,
+        "H3": true
+      },
+      "risk_cost_acceptable": false,
+      "section6_row": "H1 不成立：D1 未達標，照實報告；不在確認資料上重調"
+    },
+    "industries@0.01": {
+      "significant_after_holm": {
+        "H1": false,
+        "H2": true,
+        "H3": false
+      },
+      "risk_cost_acceptable": false,
+      "section6_row": "H1 不成立：D1 未達標，照實報告；不在確認資料上重調"
+    }
+  },
+  "dev_pool_reproduction": null,
+  "series": {
+    "AXJO": {
+      "class": "index",
+      "eval_first": "2004-09-30",
+      "eval_last": "2026-10-23",
+      "eval_days": 5575,
+      "robust_start": "2012-09-06",
+      "refit_failures": {
+        "GARCH_T": 0,
+        "GJR": 0
+      },
+      "seconds": 246.3,
+      "rows": 8678,
+      "duplicate_dates_kept_last": 1,
+      "null_close_removed": 101
+    },
+    "Autos": {
+      "class": "industry",
+      "eval_first": "1975-07-03",
+      "eval_last": "2026-08-31",
+      "eval_days": 12897,
+      "robust_start": "1983-06-02",
+      "refit_failures": {
+        "GARCH_T": 0,
+        "GJR": 0
+      },
+      "seconds": 584.0,
+      "missing_days": 0
+    },
+    "Beer": {
+      "class": "industry",
+      "eval_first": "1975-07-03",
+      "eval_last": "2026-08-31",
+      "eval_days": 12897,
+      "robust_start": "1983-06-02",
+      "refit_failures": {
+        "GARCH_T": 0,
+        "GJR": 0
+      },
+      "seconds": 571.5,
+      "missing_days": 0
+    },
+    "Books": {
+      "class": "industry",
+      "eval_first": "1975-07-03",
+      "eval_last": "2026-08-31",
+      "eval_days": 12897,
+      "robust_start": "1983-06-02",
+      "refit_failures": {
+        "GARCH_T": 0,
+        "GJR": 0
+      },
+      "seconds": 547.8,
+      "missing_days": 0
+    },
+    "BusEq": {
+      "class": "industry",
+      "eval_first": "1975-07-03",
+      "eval_last": "2026-08-31",
+      "eval_days": 12897,
+      "robust_start": "1983-06-02",
+      "refit_failures": {
+        "GARCH_T": 0,
+        "GJR": 1
+      },
+      "seconds": 511.1,
+      "missing_days": 0
+    },
+    "Carry": {
+      "class": "industry",
+      "eval_first": "1975-07-03",
+      "eval_last": "2026-08-31",
+      "eval_days": 12897,
+      "robust_start": "1983-06-02",
+      "refit_failures": {
+        "GARCH_T": 0,
+        "GJR": 0
+      },
+      "seconds": 596.8,
+      "missing_days": 0
+    },
+    "Chems": {
+      "class": "industry",
+      "eval_first": "1975-07-03",
+      "eval_last": "2026-08-31",
+      "eval_days": 12897,
+      "robust_start": "1983-06-02",
+      "refit_failures": {
+        "GARCH_T": 0,
+        "GJR": 0
+      },
+      "seconds": 604.5,
+      "missing_days": 0
+    },
+    "Clths": {
+      "class": "industry",
+      "eval_first": "1975-07-03",
+      "eval_last": "2026-08-31",
+      "eval_days": 12897,
+      "robust_start": "1983-06-02",
+      "refit_failures": {
+        "GARCH_T": 0,
+        "GJR": 0
+      },
+      "seconds": 572.4,
+      "missing_days": 0
+    },
+    "Cnstr": {
+      "class": "industry",
+      "eval_first": "1975-07-03",
+      "eval_last": "2026-08-31",
+      "eval_days": 12897,
+      "robust_start": "1983-06-02",
+      "refit_failures": {
+        "GARCH_T": 0,
+        "GJR": 0
+      },
+      "seconds": 595.6,
+      "missing_days": 0
+    },
+    "Coal": {
+      "class": "industry",
+      "eval_first": "1975-07-03",
+      "eval_last": "2026-08-31",
+      "eval_days": 12897,
+      "robust_start": "1983-06-02",
+      "refit_failures": {
+        "GARCH_T": 0,
+        "GJR": 1
+      },
+      "seconds": 571.7,
+      "missing_days": 0
+    },
+    "ElcEq": {
+      "class": "industry",
+      "eval_first": "1975-07-03",
+      "eval_last": "2026-08-31",
+      "eval_days": 12897,
+      "robust_start": "1983-06-02",
+      "refit_failures": {
+        "GARCH_T": 0,
+        "GJR": 0
+      },
+      "seconds": 585.3,
+      "missing_days": 0
+    },
+    "FTSE": {
+      "class": "index",
+      "eval_first": "1995-11-16",
+      "eval_last": "2026-10-23",
+      "eval_days": 7814,
+      "robust_start": "2003-10-20",
+      "refit_failures": {
+        "GARCH_T": 0,
+        "GJR": 0
+      },
+      "seconds": 347.8,
+      "rows": 10998,
+      "duplicate_dates_kept_last": 0,
+      "null_close_removed": 183
+    },
+    "FabPr": {
+      "class": "industry",
+      "eval_first": "1975-07-03",
+      "eval_last": "2026-08-31",
+      "eval_days": 12897,
+      "robust_start": "1983-06-02",
+      "refit_failures": {
+        "GARCH_T": 0,
+        "GJR": 0
+      },
+      "seconds": 584.9,
+      "missing_days": 0
+    },
+    "Fin": {
+      "class": "industry",
+      "eval_first": "1975-07-03",
+      "eval_last": "2026-08-31",
+      "eval_days": 12897,
+      "robust_start": "1983-06-02",
+      "refit_failures": {
+        "GARCH_T": 0,
+        "GJR": 0
+      },
+      "seconds": 498.1,
+      "missing_days": 0
+    },
+    "Food": {
+      "class": "industry",
+      "eval_first": "1975-07-03",
+      "eval_last": "2026-08-31",
+      "eval_days": 12897,
+      "robust_start": "1983-06-02",
+      "refit_failures": {
+        "GARCH_T": 0,
+        "GJR": 0
+      },
+      "seconds": 543.0,
+      "missing_days": 0
+    },
+    "GDAXI": {
+      "class": "index",
+      "eval_first": "1999-12-21",
+      "eval_last": "2026-10-22",
+      "eval_days": 6815,
+      "robust_start": "2007-10-30",
+      "refit_failures": {
+        "GARCH_T": 0,
+        "GJR": 0
+      },
+      "seconds": 291.9,
+      "rows": 9985,
+      "duplicate_dates_kept_last": 0,
+      "null_close_removed": 169
+    },
+    "GSPTSE": {
+      "class": "index",
+      "eval_first": "1991-06-25",
+      "eval_last": "2026-10-23",
+      "eval_days": 8880,
+      "robust_start": "1999-06-03",
+      "refit_failures": {
+        "GARCH_T": 0,
+        "GJR": 0
+      },
+      "seconds": 381.9,
+      "rows": 12131,
+      "duplicate_dates_kept_last": 0,
+      "null_close_removed": 250
+    },
+    "Games": {
+      "class": "industry",
+      "eval_first": "1975-07-03",
+      "eval_last": "2026-08-31",
+      "eval_days": 12897,
+      "robust_start": "1983-06-02",
+      "refit_failures": {
+        "GARCH_T": 0,
+        "GJR": 0
+      },
+      "seconds": 592.2,
+      "missing_days": 0
+    },
+    "Hlth": {
+      "class": "industry",
+      "eval_first": "1975-07-03",
+      "eval_last": "2026-08-31",
+      "eval_days": 12897,
+      "robust_start": "1983-06-02",
+      "refit_failures": {
+        "GARCH_T": 0,
+        "GJR": 0
+      },
+      "seconds": 574.3,
+      "missing_days": 0
+    },
+    "Hshld": {
+      "class": "industry",
+      "eval_first": "1975-07-03",
+      "eval_last": "2026-08-31",
+      "eval_days": 12897,
+      "robust_start": "1983-06-02",
+      "refit_failures": {
+        "GARCH_T": 0,
+        "GJR": 0
+      },
+      "seconds": 603.4,
+      "missing_days": 0
+    },
+    "KS11": {
+      "class": "index",
+      "eval_first": "2009-02-24",
+      "eval_last": "2026-10-22",
+      "eval_days": 4348,
+      "robust_start": "2017-03-16",
+      "refit_failures": {
+        "GARCH_T": 0,
+        "GJR": 0
+      },
+      "seconds": 194.7,
+      "rows": 7499,
+      "duplicate_dates_kept_last": 0,
+      "null_close_removed": 150
+    },
+    "Meals": {
+      "class": "industry",
+      "eval_first": "1975-07-03",
+      "eval_last": "2026-08-31",
+      "eval_days": 12897,
+      "robust_start": "1983-06-02",
+      "refit_failures": {
+        "GARCH_T": 0,
+        "GJR": 0
+      },
+      "seconds": 487.6,
+      "missing_days": 0
+    },
+    "Mines": {
+      "class": "industry",
+      "eval_first": "1975-07-03",
+      "eval_last": "2026-08-31",
+      "eval_days": 12897,
+      "robust_start": "1983-06-02",
+      "refit_failures": {
+        "GARCH_T": 0,
+        "GJR": 0
+      },
+      "seconds": 594.3,
+      "missing_days": 0
+    },
+    "Oil": {
+      "class": "industry",
+      "eval_first": "1975-07-03",
+      "eval_last": "2026-08-31",
+      "eval_days": 12897,
+      "robust_start": "1983-06-02",
+      "refit_failures": {
+        "GARCH_T": 0,
+        "GJR": 0
+      },
+      "seconds": 504.4,
+      "missing_days": 0
+    },
+    "Other": {
+      "class": "industry",
+      "eval_first": "1975-07-03",
+      "eval_last": "2026-08-31",
+      "eval_days": 12897,
+      "robust_start": "1983-06-02",
+      "refit_failures": {
+        "GARCH_T": 0,
+        "GJR": 0
+      },
+      "seconds": 486.8,
+      "missing_days": 0
+    },
+    "Paper": {
+      "class": "industry",
+      "eval_first": "1975-07-03",
+      "eval_last": "2026-08-31",
+      "eval_days": 12897,
+      "robust_start": "1983-06-02",
+      "refit_failures": {
+        "GARCH_T": 0,
+        "GJR": 0
+      },
+      "seconds": 517.8,
+      "missing_days": 0
+    },
+    "Rtail": {
+      "class": "industry",
+      "eval_first": "1975-07-03",
+      "eval_last": "2026-08-31",
+      "eval_days": 12897,
+      "robust_start": "1983-06-02",
+      "refit_failures": {
+        "GARCH_T": 0,
+        "GJR": 0
+      },
+      "seconds": 501.8,
+      "missing_days": 0
+    },
+    "Servs": {
+      "class": "industry",
+      "eval_first": "1975-07-03",
+      "eval_last": "2026-08-31",
+      "eval_days": 12897,
+      "robust_start": "1983-06-02",
+      "refit_failures": {
+        "GARCH_T": 0,
+        "GJR": 0
+      },
+      "seconds": 510.7,
+      "missing_days": 0
+    },
+    "Smoke": {
+      "class": "industry",
+      "eval_first": "1975-07-03",
+      "eval_last": "2026-08-31",
+      "eval_days": 12897,
+      "robust_start": "1983-06-02",
+      "refit_failures": {
+        "GARCH_T": 0,
+        "GJR": 0
+      },
+      "seconds": 598.2,
+      "missing_days": 0
+    },
+    "Steel": {
+      "class": "industry",
+      "eval_first": "1975-07-03",
+      "eval_last": "2026-08-31",
+      "eval_days": 12897,
+      "robust_start": "1983-06-02",
+      "refit_failures": {
+        "GARCH_T": 0,
+        "GJR": 0
+      },
+      "seconds": 522.7,
+      "missing_days": 0
+    },
+    "TWII": {
+      "class": "index",
+      "eval_first": "2009-09-14",
+      "eval_last": "2026-10-22",
+      "eval_days": 4181,
+      "robust_start": "2017-11-01",
+      "refit_failures": {
+        "GARCH_T": 0,
+        "GJR": 0
+      },
+      "seconds": 195.5,
+      "rows": 7324,
+      "duplicate_dates_kept_last": 0,
+      "null_close_removed": 142
+    },
+    "Telcm": {
+      "class": "industry",
+      "eval_first": "1975-07-03",
+      "eval_last": "2026-08-31",
+      "eval_days": 12897,
+      "robust_start": "1983-06-02",
+      "refit_failures": {
+        "GARCH_T": 0,
+        "GJR": 0
+      },
+      "seconds": 512.1,
+      "missing_days": 0
+    },
+    "Trans": {
+      "class": "industry",
+      "eval_first": "1975-07-03",
+      "eval_last": "2026-08-31",
+      "eval_days": 12897,
+      "robust_start": "1983-06-02",
+      "refit_failures": {
+        "GARCH_T": 0,
+        "GJR": 0
+      },
+      "seconds": 493.2,
+      "missing_days": 0
+    },
+    "Txtls": {
+      "class": "industry",
+      "eval_first": "1975-07-03",
+      "eval_last": "2026-08-31",
+      "eval_days": 12897,
+      "robust_start": "1983-06-02",
+      "refit_failures": {
+        "GARCH_T": 0,
+        "GJR": 0
+      },
+      "seconds": 611.5,
+      "missing_days": 0
+    },
+    "Util": {
+      "class": "industry",
+      "eval_first": "1975-07-03",
+      "eval_last": "2026-08-31",
+      "eval_days": 12897,
+      "robust_start": "1983-06-02",
+      "refit_failures": {
+        "GARCH_T": 0,
+        "GJR": 0
+      },
+      "seconds": 482.3,
+      "missing_days": 0
+    },
+    "Whlsl": {
+      "class": "industry",
+      "eval_first": "1975-07-03",
+      "eval_last": "2026-08-31",
+      "eval_days": 12897,
+      "robust_start": "1983-06-02",
+      "refit_failures": {
+        "GARCH_T": 0,
+        "GJR": 0
+      },
+      "seconds": 503.0,
+      "missing_days": 0
+    }
+  },
+  "inputs": [
+    {
+      "file": "30_Industry_Portfolios_daily_CSV.zip",
+      "url": "https://mba.tuck.dartmouth.edu/pages/faculty/ken.french/ftp/30_Industry_Portfolios_daily_CSV.zip",
+      "bytes": 2597362,
+      "sha256": "04a7a74fcd7c12e90461718e5ba8490e99d18c3e9323182b6c7a7b320e6cd34a",
+      "downloaded_at": "2026-10-23T22:23:33+00:00"
+    },
+    {
+      "file": "yahoo_TWII.json",
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/%5ETWII?period1=0&period2=1792794213&interval=1d&includeAdjustedClose=true",
+      "bytes": 689915,
+      "sha256": "0ca89944534f38a8b298c0899a73df02fb37953895797a6c7ae80f1ab8b93329",
+      "downloaded_at": "2026-10-23T22:23:33+00:00"
+    },
+    {
+      "file": "yahoo_KS11.json",
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/%5EKS11?period1=0&period2=1792794213&interval=1d&includeAdjustedClose=true",
+      "bytes": 771428,
+      "sha256": "03d456451d3fa3b068044c8d29b9a1046db7c2f5152f8a8d2accfd57b5167b0f",
+      "downloaded_at": "2026-10-23T22:23:35+00:00"
+    },
+    {
+      "file": "yahoo_FTSE.json",
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/%5EFTSE?period1=0&period2=1792794213&interval=1d&includeAdjustedClose=true",
+      "bytes": 1010771,
+      "sha256": "a8e62f7fb39e9c68fbe5c9e96f638c8aa8461fdf90ebff436dadb183a6ae0edf",
+      "downloaded_at": "2026-10-23T22:23:36+00:00"
+    },
+    {
+      "file": "yahoo_GDAXI.json",
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/%5EGDAXI?period1=0&period2=1792794213&interval=1d&includeAdjustedClose=true",
+      "bytes": 975505,
+      "sha256": "bb64d171189e255c12748f55c34f1894b70b5e0426327bb29b44b166b5d7ce60",
+      "downloaded_at": "2026-10-23T22:23:38+00:00"
+    },
+    {
+      "file": "yahoo_AXJO.json",
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/%5EAXJO?period1=0&period2=1792794213&interval=1d&includeAdjustedClose=true",
+      "bytes": 769445,
+      "sha256": "20921f149b40432bcb20baa4fd401bd339a6a375565a27b56664c2ed1c6b7e10",
+      "downloaded_at": "2026-10-23T22:23:39+00:00"
+    },
+    {
+      "file": "yahoo_GSPTSE.json",
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/%5EGSPTSE?period1=0&period2=1792794213&interval=1d&includeAdjustedClose=true",
+      "bytes": 1117430,
+      "sha256": "704065bd537bedd65a0a4fe60bce6bf81b3923d6bf86e30b70f7dcfbae52b519",
+      "downloaded_at": "2026-10-23T22:23:40+00:00"
+    }
+  ],
+  "scripts": {
+    "confirm_run.py": "aaf98e688c2c21659149260f2bc100bd9620a00011cd201982ceca3adc477b3c",
+    "freeze_params.py": "7dd6ee380a064d684ecbe5804e6284e685f924f571d70e8b322ebd1c2cdf25dd",
+    "quickcheck_d1.py": "c5ddf307604db9245a1f7cf682c56dd427a9dc6bc66db591ff4e6479846b60f3",
+    "devcheck_d1v2.py": "2021987d7e9a5501ed84f708fba2d57a97a09b5209aa48632ca64c9f245aad5f",
+    "devcheck_round2.py": "f041751a3eae727a2dc53fefd80a5ce021b1d3a0dc90617f9bac717ee150d798",
+    "devcheck_round3.py": "63286872823909fc078fddbc96b8d09dea215d95cc098c92253bb6f9c27707fa",
+    "pilot.py": "71243a9e159391e126a6206a2c6dc02837b0d8b72b2b423c9f58d0590fbdaa71"
+  },
+  "settings": {
+    "alphas": [
+      0.025,
+      0.01
+    ],
+    "start": "1963-07-01",
+    "eval_from_day": 3001,
+    "mcs": [
+      20,
+      0.25,
+      1000
+    ],
+    "eta": 2.0,
+    "ye_steps": [
+      0.01,
+      0.05
+    ],
+    "boot": 9999,
+    "seed": 20261024,
+    "blocks": {
+      "H1@0.025": {
+        "block": 3.26,
+        "days": 1261,
+        "first": "2021-10-13",
+        "last": "2026-10-21"
+      },
+      "H2@0.025": {
+        "block": 2.8,
+        "days": 1261,
+        "first": "2021-10-13",
+        "last": "2026-10-21"
+      },
+      "H3@0.025": {
+        "block": 2.88,
+        "days": 1261,
+        "first": "2021-10-13",
+        "last": "2026-10-21"
+      },
+      "H1@0.01": {
+        "block": 5.05,
+        "days": 1261,
+        "first": "2021-10-13",
+        "last": "2026-10-21"
+      },
+      "H2@0.01": {
+        "block": 3.33,
+        "days": 1261,
+        "first": "2021-10-13",
+        "last": "2026-10-21"
+      },
+      "H3@0.01": {
+        "block": 5.05,
+        "days": 1261,
+        "first": "2021-10-13",
+        "last": "2026-10-21"
+      }
+    }
+  },
+  "versions": {
+    "python": "3.11.9",
+    "numpy": "2.4.3",
+    "pandas": "3.0.1"
+  },
+  "seconds": 1416.7
+}

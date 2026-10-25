@@ -1,0 +1,33 @@
+{
+  "verification_status": "ANALYZED; archived-summary arithmetic verified",
+  "forecast_rerun": false,
+  "bootstrap_rerun": false,
+  "mean_rows_checked": 90,
+  "mean_max_absolute_error": 1.0408340855860843e-16,
+  "days_all_match": true,
+  "holm_max_absolute_error": 1.0842021724855044e-19,
+  "nw_p_max_absolute_error": 1.6653345369377348e-16,
+  "raw_date_checks": 36,
+  "raw_dates_all_match": true,
+  "risk_breach_max_absolute_error": 4.163336342344337e-17,
+  "risk_z2_max_absolute_error": 5.551115123125783e-17,
+  "archived_legality_flags_all_true": true,
+  "critical_errors_identified": [],
+  "source_sha256": {
+    "outputs\\reproduced\\study1\\confirm_crisis.csv": "4aeed31a16a1d940d57966a9c7aac4c800147eb4c8900e8377c88d207b34d1b7",
+    "outputs\\reproduced\\study1\\confirm_crisis_by_series.csv": "4945e5a9a1038573f82bc1efc36600c709f94643277abe23bc349bb505a77c47",
+    "outputs\\reproduced\\study1\\confirm_daily_means.csv": "81e50478da2cd47a09fc750d93fe9d1fe84ee371729996001997d6c7a05a424d",
+    "outputs\\reproduced\\study1\\confirm_diagnostics.csv": "8c06df7410b8d09f1cb2bb30103cdcdb0ba0447f062274caddf60c6fbcba4545",
+    "outputs\\reproduced\\study1\\confirm_h4.csv": "d4abf412a604ea26ac83f25551dc7bbbea5ed3fba50df067026d150f7c79e318",
+    "outputs\\reproduced\\study1\\confirm_h5.csv": "496a3982533879a2a076263f4cbdd9df0cbb880e79210c2018405d02816db525",
+    "outputs\\reproduced\\study1\\confirm_periods.csv": "1f45cd373ab4b4a6ca7fc6650de64e94bf9600d187b1bab7b95b716c70a84fb9",
+    "outputs\\reproduced\\study1\\confirm_series_metrics.csv": "746e64b067bf8a8040355f402c93ed86be64570c5dc4c9f01512f81af93a45a1",
+    "outputs\\reproduced\\study1\\confirm_states.csv": "0c7f0c23d532eb1731f59bf39af696258247348a27b0f36dd26a81479da50efe",
+    "outputs\\reproduced\\study1\\confirm_tests.csv": "b765507f3d5de45c463e86dd69eb0b3c6397929985bd4ae8169f363957d066c7"
+  },
+  "versions": {
+    "python": "3.11.9",
+    "numpy": "2.4.3",
+    "pandas": "3.0.1"
+  }
+}

@@ -1,0 +1,50 @@
+claim,source,archived_or_recomputed_value,paper_reported_value,decimal_places,rounded_value,matches_at_paper_precision
+"('industries', 0.025, 'crisis') cumulative score difference",confirm_daily_means.csv or study2_summary/descriptive_daily.csv; recomputed sum,-157.06271737285908,-157.1,1,-157.1,True
+"('industries', 0.025, 'other_days') cumulative score difference",confirm_daily_means.csv or study2_summary/descriptive_daily.csv; recomputed sum,55.47010239354297,55.5,1,55.5,True
+"('industries', 0.025, 'total') cumulative score difference",confirm_daily_means.csv or study2_summary/descriptive_daily.csv; recomputed sum,-101.59261497931611,-101.6,1,-101.6,True
+"('industries', 0.01, 'crisis') cumulative score difference",confirm_daily_means.csv or study2_summary/descriptive_daily.csv; recomputed sum,-295.899981803447,-295.9,1,-295.9,True
+"('industries', 0.01, 'other_days') cumulative score difference",confirm_daily_means.csv or study2_summary/descriptive_daily.csv; recomputed sum,117.89526424634182,117.9,1,117.9,True
+"('yen', 0.025, 'sharp_appreciation') cumulative score difference",confirm_daily_means.csv or study2_summary/descriptive_daily.csv; recomputed sum,-91.74776059211943,-91.7,1,-91.7,True
+"('yen', 0.025, 'other_days') cumulative score difference",confirm_daily_means.csv or study2_summary/descriptive_daily.csv; recomputed sum,49.03559581288115,49.0,1,49.0,True
+"('yen', 0.025, 'total') cumulative score difference",confirm_daily_means.csv or study2_summary/descriptive_daily.csv; recomputed sum,-42.71216477923825,-42.7,1,-42.7,True
+"('yen', 0.01, 'sharp_appreciation') cumulative score difference",confirm_daily_means.csv or study2_summary/descriptive_daily.csv; recomputed sum,-123.4898939663628,-123.5,1,-123.5,True
+"('yen', 0.01, 'other_days') cumulative score difference",confirm_daily_means.csv or study2_summary/descriptive_daily.csv; recomputed sum,104.06129597004767,104.1,1,104.1,True
+0.025 all a0_breach_excess pearson_r,study1_exploratory_correlations.csv,-0.7739829728573823,-0.774,3,-0.774,True
+0.025 all a0_z2 pearson_r,study1_exploratory_correlations.csv,0.8417329163879623,0.842,3,0.842,True
+0.025 all a0_breach_excess spearman_rho,study1_exploratory_correlations.csv,-0.7305390448147545,-0.731,3,-0.731,True
+0.025 all a0_z2 spearman_rho,study1_exploratory_correlations.csv,0.8445302445302446,0.845,3,0.845,True
+0.025 industry a0_breach_excess pearson_r,study1_exploratory_correlations.csv,-0.6808961968838062,-0.681,3,-0.681,True
+0.025 industry a0_z2 pearson_r,study1_exploratory_correlations.csv,0.7644055237523816,0.764,3,0.764,True
+0.025 index a0_breach_excess pearson_r,study1_exploratory_correlations.csv,-0.8693064556755726,-0.869,3,-0.869,True
+0.025 index a0_z2 pearson_r,study1_exploratory_correlations.csv,0.829606365272484,0.830,3,0.830,True
+0.01 all a0_breach_excess pearson_r,study1_exploratory_correlations.csv,-0.6315565963897531,-0.632,3,-0.632,True
+0.01 all a0_z2 pearson_r,study1_exploratory_correlations.csv,0.6684987397686015,0.668,3,0.668,True
+Figure C1 A2 1980s,confirm_daily_means.csv; recomputed decade mean,-0.013781299920826544,-0.014,3,-0.014,True
+Figure C1 A2 1990s,confirm_daily_means.csv; recomputed decade mean,-0.0016901223604777254,-0.002,3,-0.002,True
+Figure C1 A2 2000s,confirm_daily_means.csv; recomputed decade mean,-0.012601021837688284,-0.013,3,-0.013,True
+Figure C1 A2 2010s,confirm_daily_means.csv; recomputed decade mean,0.0007941661979211419,0.001,3,0.001,True
+Figure C1 A2 2020-26,confirm_daily_means.csv; recomputed decade mean,-0.014525736214154556,-0.015,3,-0.015,True
+Figure C1 R0 1975-79,confirm_daily_means.csv; recomputed decade mean,-0.0019891096248781724,-0.002,3,-0.002,True
+Figure C1 R0 2000s,confirm_daily_means.csv; recomputed decade mean,-0.028932128712130693,-0.029,3,-0.029,True
+Figure C1 R0 2010s,confirm_daily_means.csv; recomputed decade mean,-0.032901000576644274,-0.033,3,-0.033,True
+Figure C1 R0 2020-26,confirm_daily_means.csv; recomputed decade mean,-0.040750681744079115,-0.041,3,-0.041,True
+Yen lagged signal 0.025 slope,study2_summary/signal_regression.csv,0.4642467064093522,0.464,3,0.464,True
+Yen lagged signal 0.025 ci_low,study2_summary/signal_regression.csv,-0.5401468742303267,-0.540,3,-0.540,True
+Yen lagged signal 0.025 ci_high,study2_summary/signal_regression.csv,1.468640287049031,1.469,3,1.469,True
+Yen lagged signal 0.01 slope,study2_summary/signal_regression.csv,2.2268231090265838,2.227,3,2.227,True
+Yen lagged signal 0.01 ci_low,study2_summary/signal_regression.csv,-1.4903306715335725,-1.490,3,-1.490,True
+Yen lagged signal 0.01 ci_high,study2_summary/signal_regression.csv,5.94397688958674,5.944,3,5.944,True
+Yen sharp-appreciation threshold,study2_summary/appreciation.csv,-8.3706086479826,-8.37,2,-8.37,True
+Industry MCS/DJC interaction mcs_gap_before,confirm_h4.csv,-0.0094588236120641,-0.0095,4,-0.0095,True
+Industry MCS/DJC interaction mcs_gap_after,confirm_h4.csv,-0.0073807558529912,-0.0074,4,-0.0074,True
+Industry MCS/DJC interaction after_minus_before,confirm_h4.csv,0.0020780677590729,0.0021,4,0.0021,True
+Industry MCS/DJC interaction ci_low,confirm_h4.csv,-6.507851877716152e-06,-0.000007,6,-0.000007,True
+Industry MCS/DJC interaction ci_high,confirm_h4.csv,0.0044803942567407,0.004480,6,0.004480,True
+Industry 2000-day-window H1 mean,"confirm_tests.csv, kind=robust_2000_window, block_spec=pw",-0.008230269656499,-0.0082,4,-0.0082,True
+Industry 2000-day-window H1 ci_low,"confirm_tests.csv, kind=robust_2000_window, block_spec=pw",-0.0216831901388449,-0.0217,4,-0.0217,True
+Industry 2000-day-window H1 ci_high,"confirm_tests.csv, kind=robust_2000_window, block_spec=pw",0.0026679096389359,0.0027,4,0.0027,True
+Industry 2000-day-window H1 p_one_sided,"confirm_tests.csv, kind=robust_2000_window, block_spec=pw",0.1014,0.1014,4,0.1014,True
+Industry 2000-day-window H2 mean,"confirm_tests.csv, kind=robust_2000_window, block_spec=pw",-0.0131065923113071,-0.0131,4,-0.0131,True
+Industry 2000-day-window H2 ci_low,"confirm_tests.csv, kind=robust_2000_window, block_spec=pw",-0.0242083794553261,-0.0242,4,-0.0242,True
+Industry 2000-day-window H2 ci_high,"confirm_tests.csv, kind=robust_2000_window, block_spec=pw",-0.0046216515434034,-0.0046,4,-0.0046,True
+Industry 2000-day-window H2 p_one_sided,"confirm_tests.csv, kind=robust_2000_window, block_spec=pw",0.0109,0.0109,4,0.0109,True

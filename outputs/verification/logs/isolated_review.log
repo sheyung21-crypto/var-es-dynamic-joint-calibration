@@ -1,0 +1,13 @@
+Running code/validation/verify_study2.py
+Exit 0; 11.4s; outputs\verification\logs\verify_study2_1792900982141680900.log
+Running code/reporting/build_tables_figures.py
+Exit 0; 15.9s; outputs\verification\logs\build_tables_figures_1792900993498463200.log
+Running code/reporting/paper_figures.py
+Exit 0; 18.5s; outputs\verification\logs\paper_figures_1792901009363129900.log
+Running code/reporting/export_paper_tables.py
+Exit 0; 0.5s; outputs\verification\logs\export_paper_tables_1792901027892575100.log
+Running code/validation/verify_paper_claims.py
+Exit 0; 2.8s; outputs\verification\logs\verify_paper_claims_1792901028366693000.log
+Running code/validation/compare_results.py
+Exit 0; 2.7s; outputs\verification\logs\compare_results_1792901031182823500.log
+Review path complete. Study 1 tables use archived estimates; consult verification status.

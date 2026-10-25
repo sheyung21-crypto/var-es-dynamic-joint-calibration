@@ -1,0 +1,26 @@
+{
+  "missing_manifest_preflight": {
+    "exit_code": 2,
+    "fit_started": false,
+    "status": "PASS"
+  },
+  "authorized_import": {
+    "exit_code": 0,
+    "status": "IMPORTED",
+    "copied": [
+      "data/study1/raw/french/30_Industry_Portfolios_daily_CSV.zip",
+      "data/study1/raw/yahoo/yahoo_TWII.json",
+      "data/study1/raw/yahoo/yahoo_KS11.json",
+      "data/study1/raw/yahoo/yahoo_FTSE.json",
+      "data/study1/raw/yahoo/yahoo_GDAXI.json",
+      "data/study1/raw/yahoo/yahoo_AXJO.json",
+      "data/study1/raw/yahoo/yahoo_GSPTSE.json",
+      "data/study1/raw/fetch_manifest.json"
+    ],
+    "already_matching": [],
+    "manifest": "data/study1/raw/fetch_manifest.json",
+    "note": "Importing does not confer data redistribution rights."
+  },
+  "imported_input_verification_exit_code": 0,
+  "source_files_changed": false
+}

@@ -1,0 +1,19 @@
+{
+  "primary": {
+    "alpha": 0.025,
+    "contrast": "A2_vs_A0",
+    "block": 3.26,
+    "days": 6043,
+    "mean": -0.007068039844322028,
+    "ci_low": -0.024251056119415783,
+    "ci_high": 0.008931617155161671,
+    "p_one_sided": 0.1973,
+    "primary": true
+  },
+  "confirmed": false,
+  "holm_applied": false,
+  "interpretation": "The development-period yen improvement was not confirmed in the historical held-out evaluation.",
+  "forecast_sha256": "7bde3555a16cf16e5eb664aa4bfda71bdedfd79406df13d697aa21c0174a1346",
+  "script_sha256": "e07c80b4489b98c93ee2018e92fa06cc1dbec40c563941e7524bba7111eb864a",
+  "completed_utc": "2026-10-25T03:54:48.346935+00:00"
+}

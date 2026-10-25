@@ -1,0 +1,15 @@
+{
+  "study2": {
+    "file": "data/study2/DEXJPUS_1974_2009.csv",
+    "expected_sha256": "90fa5f9af7dd2ba1754958b11114e41f48946efa440f8afc9f62b50a09a479b3",
+    "expected_bytes": 166423,
+    "actual_bytes": 166423,
+    "actual_sha256": "90fa5f9af7dd2ba1754958b11114e41f48946efa440f8afc9f62b50a09a479b3",
+    "status": "MATCH"
+  },
+  "study1": {
+    "status": "EXTERNAL_INPUT_REQUIRED",
+    "instruction": "Obtain authorized frozen inputs; pass their directory with --study1."
+  },
+  "status": "BUNDLED_INPUT_VERIFIED_STUDY1_EXTERNAL"
+}

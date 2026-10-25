@@ -1,0 +1,48 @@
+{
+  "scope": "Reference outputs versus available reproduced files; source of each stage must be read with execution records.",
+  "absolute_tolerance": 1e-12,
+  "relative_tolerance": 0,
+  "exact_matches_reported_separately": true,
+  "coverage": {
+    "study1": {
+      "reference_csv_files": 10,
+      "compared_csv_files": 10
+    },
+    "study2_run1": {
+      "reference_csv_files": 5,
+      "compared_csv_files": 5
+    },
+    "study2_summary": {
+      "reference_csv_files": 5,
+      "compared_csv_files": 5
+    },
+    "derived": {
+      "reference_csv_files": 10,
+      "compared_csv_files": 10
+    },
+    "table_sources": {
+      "reference_csv_files": 13,
+      "compared_csv_files": 13
+    }
+  },
+  "csv_columns_compared": 427,
+  "csv_columns_exact": 415,
+  "csv_columns_within_tolerance": 427,
+  "array_count": 106,
+  "arrays_exact": 106,
+  "arrays_within_tolerance": 106,
+  "paper": {
+    "cells": 580,
+    "matched": 580,
+    "tables": 13
+  },
+  "versions": {
+    "python": "3.11.9",
+    "numpy": "2.4.3",
+    "pandas": "3.0.1"
+  },
+  "unverified": [
+    "Study 1 original per-series daily q/e were not archived; direct pathwise equality is unavailable.",
+    "Matching current-vintage historical data does not verify point-in-time data availability."
+  ]
+}

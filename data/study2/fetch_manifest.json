@@ -1,0 +1,16 @@
+{
+  "source": "Federal Reserve Board H.10 via FRED",
+  "series": "DEXJPUS",
+  "quotation": "Japanese yen per U.S. dollar",
+  "url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=DEXJPUS&cosd=1974-01-02&coed=2009-12-31",
+  "requested_start": "1974-01-02",
+  "requested_end": "2009-12-31",
+  "started_utc": "2026-10-24T01:00:02.149701+00:00",
+  "downloaded_utc": "2026-10-24T01:00:07.647972+00:00",
+  "bytes": 166423,
+  "sha256": "90fa5f9af7dd2ba1754958b11114e41f48946efa440f8afc9f62b50a09a479b3",
+  "protocol_commit": "54a4ce2d1af16326cf0a14c93d555523b6135f11",
+  "protocol_sha256": "848876b417bd4153c83c1457aca2263df5f80e101de9c7855e63ec38f428b09a",
+  "content_type": "application/csv",
+  "status": 200
+}

@@ -1,0 +1,544 @@
+table,pdf_page,row,column,token,displayed_text,displayed_number,whole_row_verified,archived_table
+1,10,3,2,1,"The four DJC experts applied to EW, with weights fixed at 1/4",1,True,
+1,10,3,2,2,"The four DJC experts applied to EW, with weights fixed at 1/4",4,True,
+1,10,4,2,1,"Batch calibration of EW, re-estimated daily or every 20 trading days",20,True,
+1,10,5,2,1,"Adapted Ye-type controller on EW, with step size 0.01 or 0.05",0.01,True,
+1,10,5,2,2,"Adapted Ye-type controller on EW, with step size 0.01 or 0.05",0.05,True,
+2,11,1,3,1,−0.0079,-0.0079,True,study1_primary
+2,11,1,4,1,"[−0.0197, 0.0018]",-0.0197,True,study1_primary
+2,11,1,4,2,"[−0.0197, 0.0018]",0.0018,True,study1_primary
+2,11,1,5,1,0.0861,0.0861,True,study1_primary
+2,11,1,6,1,0.0861,0.0861,True,study1_primary
+2,11,2,3,1,−0.0208,-0.0208,True,study1_primary
+2,11,2,4,1,"[−0.0306, −0.0125]",-0.0306,True,study1_primary
+2,11,2,4,2,"[−0.0306, −0.0125]",-0.0125,True,study1_primary
+2,11,2,5,1,0.0002,0.0002,True,study1_primary
+2,11,2,6,1,0.0006,0.0006,True,study1_primary
+2,11,3,3,1,−0.0080,-0.0080,True,study1_primary
+2,11,3,4,1,"[−0.0160, −0.0017]",-0.0160,True,study1_primary
+2,11,3,4,2,"[−0.0160, −0.0017]",-0.0017,True,study1_primary
+2,11,3,5,1,0.0239,0.0239,True,study1_primary
+2,11,3,6,1,0.0478,0.0478,True,study1_primary
+3,13,1,2,1,−0.0101,-0.0101,True,study1_secondary
+3,13,1,3,1,"[−0.0137, −0.0071]",-0.0137,True,study1_secondary
+3,13,1,3,2,"[−0.0137, −0.0071]",-0.0071,True,study1_secondary
+3,13,2,2,1,−0.0245,-0.0245,True,study1_secondary
+3,13,2,3,1,"[−0.0361, −0.0146]",-0.0361,True,study1_secondary
+3,13,2,3,2,"[−0.0361, −0.0146]",-0.0146,True,study1_secondary
+3,13,3,2,1,−0.0099,-0.0099,True,study1_secondary
+3,13,3,3,1,"[−0.0134, −0.0066]",-0.0134,True,study1_secondary
+3,13,3,3,2,"[−0.0134, −0.0066]",-0.0066,True,study1_secondary
+3,13,4,2,1,0.0156,0.0156,True,study1_secondary
+3,13,4,3,1,"[0.0041, 0.0265]",0.0041,True,study1_secondary
+3,13,4,3,2,"[0.0041, 0.0265]",0.0265,True,study1_secondary
+3,13,5,2,1,−0.0095,-0.0095,True,study1_secondary
+3,13,5,3,1,"[−0.0163, −0.0026]",-0.0163,True,study1_secondary
+3,13,5,3,2,"[−0.0163, −0.0026]",-0.0026,True,study1_secondary
+3,13,6,2,1,−0.0058,-0.0058,True,study1_secondary
+3,13,6,3,1,"[−0.0162, 0.0030]",-0.0162,True,study1_secondary
+3,13,6,3,2,"[−0.0162, 0.0030]",0.0030,True,study1_secondary
+3,13,7,2,1,−0.0074,-0.0074,True,study1_secondary
+3,13,7,3,1,"[−0.0127, −0.0020]",-0.0127,True,study1_secondary
+3,13,7,3,2,"[−0.0127, −0.0020]",-0.0020,True,study1_secondary
+3,13,8,2,1,−0.0134,-0.0134,True,study1_secondary
+3,13,8,3,1,"[−0.0200, −0.0072]",-0.0200,True,study1_secondary
+3,13,8,3,2,"[−0.0200, −0.0072]",-0.0072,True,study1_secondary
+3,13,9,2,1,−0.0108,-0.0108,True,study1_secondary
+3,13,9,3,1,"[−0.0173, −0.0048]",-0.0173,True,study1_secondary
+3,13,9,3,2,"[−0.0173, −0.0048]",-0.0048,True,study1_secondary
+4,14,1,1,1,1987-10-19,1987,True,study1_crisis
+4,14,1,1,2,1987-10-19,-10,True,study1_crisis
+4,14,1,1,3,1987-10-19,-19,True,study1_crisis
+4,14,1,3,1,4.9084,4.9084,True,study1_crisis
+4,14,1,4,1,4.1914,4.1914,True,study1_crisis
+4,14,1,5,1,−0.7169,-0.7169,True,study1_crisis
+4,14,2,1,1,1998-08-17,1998,True,study1_crisis
+4,14,2,1,2,1998-08-17,-08,True,study1_crisis
+4,14,2,1,3,1998-08-17,-17,True,study1_crisis
+4,14,2,3,1,2.2977,2.2977,True,study1_crisis
+4,14,2,4,1,2.0573,2.0573,True,study1_crisis
+4,14,2,5,1,−0.2404,-0.2404,True,study1_crisis
+4,14,3,1,1,2001-09-17,2001,True,study1_crisis
+4,14,3,1,2,2001-09-17,-09,True,study1_crisis
+4,14,3,1,3,2001-09-17,-17,True,study1_crisis
+4,14,3,2,1,Reopening after 9/11,9,True,study1_crisis
+4,14,3,2,2,Reopening after 9/11,11,True,study1_crisis
+4,14,3,3,1,2.0506,2.0506,True,study1_crisis
+4,14,3,4,1,2.0335,2.0335,True,study1_crisis
+4,14,3,5,1,−0.0171,-0.0171,True,study1_crisis
+4,14,4,1,1,2008-09-15,2008,True,study1_crisis
+4,14,4,1,2,2008-09-15,-09,True,study1_crisis
+4,14,4,1,3,2008-09-15,-15,True,study1_crisis
+4,14,4,3,1,3.5367,3.5367,True,study1_crisis
+4,14,4,4,1,2.8579,2.8579,True,study1_crisis
+4,14,4,5,1,−0.6788,-0.6788,True,study1_crisis
+4,14,5,1,1,2011-08-08,2011,True,study1_crisis
+4,14,5,1,2,2011-08-08,-08,True,study1_crisis
+4,14,5,1,3,2011-08-08,-08,True,study1_crisis
+4,14,5,3,1,2.2504,2.2504,True,study1_crisis
+4,14,5,4,1,2.1504,2.1504,True,study1_crisis
+4,14,5,5,1,−0.1000,-0.1000,True,study1_crisis
+4,14,6,1,1,2015-08-24,2015,True,study1_crisis
+4,14,6,1,2,2015-08-24,-08,True,study1_crisis
+4,14,6,1,3,2015-08-24,-24,True,study1_crisis
+4,14,6,3,1,1.5493,1.5493,True,study1_crisis
+4,14,6,4,1,1.4905,1.4905,True,study1_crisis
+4,14,6,5,1,−0.0588,-0.0588,True,study1_crisis
+4,14,7,1,1,2020-02-24,2020,True,study1_crisis
+4,14,7,1,2,2020-02-24,-02,True,study1_crisis
+4,14,7,1,3,2020-02-24,-24,True,study1_crisis
+4,14,7,2,1,COVID-19 outbreak,19,True,study1_crisis
+4,14,7,3,1,4.3214,4.3214,True,study1_crisis
+4,14,7,4,1,3.5156,3.5156,True,study1_crisis
+4,14,7,5,1,−0.8058,-0.8058,True,study1_crisis
+5,15,1,1,1,97.5%,97.5,True,study2_tests
+5,15,1,2,1,3.26,3.26,True,study2_tests
+5,15,1,3,1,−0.0071,-0.0071,True,study2_tests
+5,15,1,4,1,"[−0.0243, 0.0089]",-0.0243,True,study2_tests
+5,15,1,4,2,"[−0.0243, 0.0089]",0.0089,True,study2_tests
+5,15,1,5,1,0.1973,0.1973,True,study2_tests
+5,15,2,1,1,97.5%,97.5,True,study2_tests
+5,15,2,2,1,20,20,True,study2_tests
+5,15,2,3,1,−0.0071,-0.0071,True,study2_tests
+5,15,2,4,1,"[−0.0246, 0.0085]",-0.0246,True,study2_tests
+5,15,2,4,2,"[−0.0246, 0.0085]",0.0085,True,study2_tests
+5,15,2,5,1,0.1970,0.1970,True,study2_tests
+5,15,3,1,1,97.5%,97.5,True,study2_tests
+5,15,3,2,1,60,60,True,study2_tests
+5,15,3,3,1,−0.0071,-0.0071,True,study2_tests
+5,15,3,4,1,"[−0.0237, 0.0078]",-0.0237,True,study2_tests
+5,15,3,4,2,"[−0.0237, 0.0078]",0.0078,True,study2_tests
+5,15,3,5,1,0.1849,0.1849,True,study2_tests
+5,15,4,1,1,97.5%,97.5,True,study2_tests
+5,15,4,2,1,250,250,True,study2_tests
+5,15,4,3,1,−0.0071,-0.0071,True,study2_tests
+5,15,4,4,1,"[−0.0211, 0.0059]",-0.0211,True,study2_tests
+5,15,4,4,2,"[−0.0211, 0.0059]",0.0059,True,study2_tests
+5,15,4,5,1,0.1521,0.1521,True,study2_tests
+5,15,5,1,1,99%,99,True,study2_tests
+5,15,5,2,1,5.05,5.05,True,study2_tests
+5,15,5,3,1,−0.0032,-0.0032,True,study2_tests
+5,15,5,4,1,"[−0.0315, 0.0234]",-0.0315,True,study2_tests
+5,15,5,4,2,"[−0.0315, 0.0234]",0.0234,True,study2_tests
+5,15,5,5,1,0.3934,0.3934,True,study2_tests
+5,15,6,1,1,99%,99,True,study2_tests
+5,15,6,2,1,20,20,True,study2_tests
+5,15,6,3,1,−0.0032,-0.0032,True,study2_tests
+5,15,6,4,1,"[−0.0310, 0.0220]",-0.0310,True,study2_tests
+5,15,6,4,2,"[−0.0310, 0.0220]",0.0220,True,study2_tests
+5,15,6,5,1,0.3984,0.3984,True,study2_tests
+5,15,7,1,1,99%,99,True,study2_tests
+5,15,7,2,1,60,60,True,study2_tests
+5,15,7,3,1,−0.0032,-0.0032,True,study2_tests
+5,15,7,4,1,"[−0.0296, 0.0202]",-0.0296,True,study2_tests
+5,15,7,4,2,"[−0.0296, 0.0202]",0.0202,True,study2_tests
+5,15,7,5,1,0.3873,0.3873,True,study2_tests
+5,15,8,1,1,99%,99,True,study2_tests
+5,15,8,2,1,250,250,True,study2_tests
+5,15,8,3,1,−0.0032,-0.0032,True,study2_tests
+5,15,8,4,1,"[−0.0258, 0.0168]",-0.0258,True,study2_tests
+5,15,8,4,2,"[−0.0258, 0.0168]",0.0168,True,study2_tests
+5,15,8,5,1,0.3670,0.3670,True,study2_tests
+6,15,1,1,1,97.5%,97.5,True,study2_comparators
+6,15,1,3,1,−0.0053,-0.0053,True,study2_comparators
+6,15,1,4,1,"[−0.0124, 0.0018]",-0.0124,True,study2_comparators
+6,15,1,4,2,"[−0.0124, 0.0018]",0.0018,True,study2_comparators
+6,15,2,1,1,97.5%,97.5,True,study2_comparators
+6,15,2,3,1,−0.0005,-0.0005,True,study2_comparators
+6,15,2,4,1,"[−0.0087, 0.0068]",-0.0087,True,study2_comparators
+6,15,2,4,2,"[−0.0087, 0.0068]",0.0068,True,study2_comparators
+6,15,3,1,1,97.5%,97.5,True,study2_comparators
+6,15,3,3,1,−0.0113,-0.0113,True,study2_comparators
+6,15,3,4,1,"[−0.0358, 0.0126]",-0.0358,True,study2_comparators
+6,15,3,4,2,"[−0.0358, 0.0126]",0.0126,True,study2_comparators
+6,15,4,1,1,97.5%,97.5,True,study2_comparators
+6,15,4,3,1,−0.0022,-0.0022,True,study2_comparators
+6,15,4,4,1,"[−0.0074, 0.0033]",-0.0074,True,study2_comparators
+6,15,4,4,2,"[−0.0074, 0.0033]",0.0033,True,study2_comparators
+6,15,5,1,1,99%,99,True,study2_comparators
+6,15,5,3,1,−0.0077,-0.0077,True,study2_comparators
+6,15,5,4,1,"[−0.0234, 0.0083]",-0.0234,True,study2_comparators
+6,15,5,4,2,"[−0.0234, 0.0083]",0.0083,True,study2_comparators
+6,15,6,1,1,99%,99,True,study2_comparators
+6,15,6,3,1,0.0064,0.0064,True,study2_comparators
+6,15,6,4,1,"[−0.0075, 0.0196]",-0.0075,True,study2_comparators
+6,15,6,4,2,"[−0.0075, 0.0196]",0.0196,True,study2_comparators
+6,15,7,1,1,99%,99,True,study2_comparators
+6,15,7,3,1,−0.0083,-0.0083,True,study2_comparators
+6,15,7,4,1,"[−0.0531, 0.0310]",-0.0531,True,study2_comparators
+6,15,7,4,2,"[−0.0531, 0.0310]",0.0310,True,study2_comparators
+6,15,8,1,1,99%,99,True,study2_comparators
+6,15,8,3,1,0.0004,0.0004,True,study2_comparators
+6,15,8,4,1,"[−0.0099, 0.0119]",-0.0099,True,study2_comparators
+6,15,8,4,2,"[−0.0099, 0.0119]",0.0119,True,study2_comparators
+7,16,1,1,1,97.5%,97.5,True,study2_appreciation
+7,16,1,3,1,605,605,True,study2_appreciation
+7,16,1,4,1,−0.1516,-0.1516,True,study2_appreciation
+7,16,1,5,1,"[−0.2289, −0.0744]",-0.2289,True,study2_appreciation
+7,16,1,5,2,"[−0.2289, −0.0744]",-0.0744,True,study2_appreciation
+7,16,2,1,1,97.5%,97.5,True,study2_appreciation
+7,16,2,3,1,"5,438",5438,True,study2_appreciation
+7,16,2,4,1,0.0090,0.0090,True,study2_appreciation
+7,16,2,5,1,"[−0.0029, 0.0209]",-0.0029,True,study2_appreciation
+7,16,2,5,2,"[−0.0029, 0.0209]",0.0209,True,study2_appreciation
+7,16,3,1,1,99%,99,True,study2_appreciation
+7,16,3,3,1,605,605,True,study2_appreciation
+7,16,3,4,1,−0.2041,-0.2041,True,study2_appreciation
+7,16,3,5,1,"[−0.3418, −0.0664]",-0.3418,True,study2_appreciation
+7,16,3,5,2,"[−0.3418, −0.0664]",-0.0664,True,study2_appreciation
+7,16,4,1,1,99%,99,True,study2_appreciation
+7,16,4,3,1,"5,438",5438,True,study2_appreciation
+7,16,4,4,1,0.0191,0.0191,True,study2_appreciation
+7,16,4,5,1,"[0.0023, 0.0359]",0.0023,True,study2_appreciation
+7,16,4,5,2,"[0.0023, 0.0359]",0.0359,True,study2_appreciation
+8,17,1,1,1,97.5%,97.5,True,study2_tertiles
+8,17,1,3,1,"2,635",2635,True,study2_tertiles
+8,17,1,4,1,"[−0.017, 0.003]",-0.017,True,study2_tertiles
+8,17,1,4,2,"[−0.017, 0.003]",0.003,True,study2_tertiles
+8,17,1,5,1,−0.0003,-0.0003,True,study2_tertiles
+8,17,1,6,1,"[−0.0124, 0.0117]",-0.0124,True,study2_tertiles
+8,17,1,6,2,"[−0.0124, 0.0117]",0.0117,True,study2_tertiles
+8,17,2,1,1,97.5%,97.5,True,study2_tertiles
+8,17,2,3,1,"2,043",2043,True,study2_tertiles
+8,17,2,4,1,"[0.007, 0.015]",0.007,True,study2_tertiles
+8,17,2,4,2,"[0.007, 0.015]",0.015,True,study2_tertiles
+8,17,2,5,1,−0.0389,-0.0389,True,study2_tertiles
+8,17,2,6,1,"[−0.0725, −0.0052]",-0.0725,True,study2_tertiles
+8,17,2,6,2,"[−0.0725, −0.0052]",-0.0052,True,study2_tertiles
+8,17,3,1,1,97.5%,97.5,True,study2_tertiles
+8,17,3,3,1,"1,365",1365,True,study2_tertiles
+8,17,3,4,1,"[0.019, 0.035]",0.019,True,study2_tertiles
+8,17,3,4,2,"[0.019, 0.035]",0.035,True,study2_tertiles
+8,17,3,5,1,0.0275,0.0275,True,study2_tertiles
+8,17,3,6,1,"[−0.0048, 0.0597]",-0.0048,True,study2_tertiles
+8,17,3,6,2,"[−0.0048, 0.0597]",0.0597,True,study2_tertiles
+8,17,4,1,1,99%,99,True,study2_tertiles
+8,17,4,3,1,"2,484",2484,True,study2_tertiles
+8,17,4,4,1,"[−0.010, −0.002]",-0.010,True,study2_tertiles
+8,17,4,4,2,"[−0.010, −0.002]",-0.002,True,study2_tertiles
+8,17,4,5,1,−0.0146,-0.0146,True,study2_tertiles
+8,17,4,6,1,"[−0.0484, 0.0191]",-0.0484,True,study2_tertiles
+8,17,4,6,2,"[−0.0484, 0.0191]",0.0191,True,study2_tertiles
+8,17,5,1,1,99%,99,True,study2_tertiles
+8,17,5,3,1,"1,906",1906,True,study2_tertiles
+8,17,5,4,1,"[0.002, 0.006]",0.002,True,study2_tertiles
+8,17,5,4,2,"[0.002, 0.006]",0.006,True,study2_tertiles
+8,17,5,5,1,−0.0129,-0.0129,True,study2_tertiles
+8,17,5,6,1,"[−0.0564, 0.0307]",-0.0564,True,study2_tertiles
+8,17,5,6,2,"[−0.0564, 0.0307]",0.0307,True,study2_tertiles
+8,17,6,1,1,99%,99,True,study2_tertiles
+8,17,6,3,1,"1,653",1653,True,study2_tertiles
+8,17,6,4,1,"[0.010, 0.022]",0.010,True,study2_tertiles
+8,17,6,4,2,"[0.010, 0.022]",0.022,True,study2_tertiles
+8,17,6,5,1,0.0251,0.0251,True,study2_tertiles
+8,17,6,6,1,"[−0.0340, 0.0842]",-0.0340,True,study2_tertiles
+8,17,6,6,2,"[−0.0340, 0.0842]",0.0842,True,study2_tertiles
+9,19,1,3,1,20,20,True,study1_robustness
+9,19,1,4,1,−0.0079,-0.0079,True,study1_robustness
+9,19,1,5,1,"[−0.0227, 0.0041]",-0.0227,True,study1_robustness
+9,19,1,5,2,"[−0.0227, 0.0041]",0.0041,True,study1_robustness
+9,19,1,6,1,0.1291,0.1291,True,study1_robustness
+9,19,2,3,1,60,60,True,study1_robustness
+9,19,2,4,1,−0.0079,-0.0079,True,study1_robustness
+9,19,2,5,1,"[−0.0228, 0.0045]",-0.0228,True,study1_robustness
+9,19,2,5,2,"[−0.0228, 0.0045]",0.0045,True,study1_robustness
+9,19,2,6,1,0.1343,0.1343,True,study1_robustness
+9,19,3,3,1,250,250,True,study1_robustness
+9,19,3,4,1,−0.0079,-0.0079,True,study1_robustness
+9,19,3,5,1,"[−0.0208, 0.0034]",-0.0208,True,study1_robustness
+9,19,3,5,2,"[−0.0208, 0.0034]",0.0034,True,study1_robustness
+9,19,3,6,1,0.1031,0.1031,True,study1_robustness
+9,19,4,3,1,20,20,True,study1_robustness
+9,19,4,4,1,−0.0208,-0.0208,True,study1_robustness
+9,19,4,5,1,"[−0.0325, −0.0109]",-0.0325,True,study1_robustness
+9,19,4,5,2,"[−0.0325, −0.0109]",-0.0109,True,study1_robustness
+9,19,4,6,1,0.0005,0.0005,True,study1_robustness
+9,19,5,3,1,60,60,True,study1_robustness
+9,19,5,4,1,−0.0208,-0.0208,True,study1_robustness
+9,19,5,5,1,"[−0.0320, −0.0110]",-0.0320,True,study1_robustness
+9,19,5,5,2,"[−0.0320, −0.0110]",-0.0110,True,study1_robustness
+9,19,5,6,1,0.0005,0.0005,True,study1_robustness
+9,19,6,3,1,250,250,True,study1_robustness
+9,19,6,4,1,−0.0208,-0.0208,True,study1_robustness
+9,19,6,5,1,"[−0.0313, −0.0109]",-0.0313,True,study1_robustness
+9,19,6,5,2,"[−0.0313, −0.0109]",-0.0109,True,study1_robustness
+9,19,6,6,1,0.0002,0.0002,True,study1_robustness
+9,19,7,3,1,20,20,True,study1_robustness
+9,19,7,4,1,−0.0080,-0.0080,True,study1_robustness
+9,19,7,5,1,"[−0.0174, −0.0005]",-0.0174,True,study1_robustness
+9,19,7,5,2,"[−0.0174, −0.0005]",-0.0005,True,study1_robustness
+9,19,7,6,1,0.0471,0.0471,True,study1_robustness
+9,19,8,3,1,60,60,True,study1_robustness
+9,19,8,4,1,−0.0080,-0.0080,True,study1_robustness
+9,19,8,5,1,"[−0.0173, −0.0006]",-0.0173,True,study1_robustness
+9,19,8,5,2,"[−0.0173, −0.0006]",-0.0006,True,study1_robustness
+9,19,8,6,1,0.0436,0.0436,True,study1_robustness
+9,19,9,3,1,250,250,True,study1_robustness
+9,19,9,4,1,−0.0080,-0.0080,True,study1_robustness
+9,19,9,5,1,"[−0.0164, −0.0011]",-0.0164,True,study1_robustness
+9,19,9,5,2,"[−0.0164, −0.0011]",-0.0011,True,study1_robustness
+9,19,9,6,1,0.0297,0.0297,True,study1_robustness
+C1,24,1,2,1,1.1414,1.1414,True,study1_metrics
+C1,24,1,3,1,2.604,2.604,True,study1_metrics
+C1,24,1,4,1,−0.0897,-0.0897,True,study1_metrics
+C1,24,1,5,1,1.3829,1.3829,True,study1_metrics
+C1,24,1,6,1,1.126,1.126,True,study1_metrics
+C1,24,1,7,1,−0.2073,-0.2073,True,study1_metrics
+C1,24,2,2,1,1.1335,1.1335,True,study1_metrics
+C1,24,2,3,1,2.178,2.178,True,study1_metrics
+C1,24,2,4,1,0.1209,0.1209,True,study1_metrics
+C1,24,2,5,1,1.3691,1.3691,True,study1_metrics
+C1,24,2,6,1,0.863,0.863,True,study1_metrics
+C1,24,2,7,1,0.1222,0.1222,True,study1_metrics
+C1,24,3,2,1,1.1436,1.1436,True,study1_metrics
+C1,24,3,3,1,2.144,2.144,True,study1_metrics
+C1,24,3,4,1,0.1387,0.1387,True,study1_metrics
+C1,24,3,5,1,1.3939,1.3939,True,study1_metrics
+C1,24,3,6,1,0.817,0.817,True,study1_metrics
+C1,24,3,7,1,0.1775,0.1775,True,study1_metrics
+C1,24,4,2,1,1.1543,1.1543,True,study1_metrics
+C1,24,4,3,1,2.565,2.565,True,study1_metrics
+C1,24,4,4,1,−0.0469,-0.0469,True,study1_metrics
+C1,24,4,5,1,1.4049,1.4049,True,study1_metrics
+C1,24,4,6,1,1.098,1.098,True,study1_metrics
+C1,24,4,7,1,−0.1343,-0.1343,True,study1_metrics
+C1,24,5,2,1,1.1580,1.1580,True,study1_metrics
+C1,24,5,3,1,2.578,2.578,True,study1_metrics
+C1,24,5,4,1,−0.0542,-0.0542,True,study1_metrics
+C1,24,5,5,1,1.4112,1.4112,True,study1_metrics
+C1,24,5,6,1,1.112,1.112,True,study1_metrics
+C1,24,5,7,1,−0.1522,-0.1522,True,study1_metrics
+C1,24,6,2,1,1.1415,1.1415,True,study1_metrics
+C1,24,6,3,1,2.316,2.316,True,study1_metrics
+C1,24,6,4,1,0.0265,0.0265,True,study1_metrics
+C1,24,6,5,1,1.3805,1.3805,True,study1_metrics
+C1,24,6,6,1,0.976,0.976,True,study1_metrics
+C1,24,6,7,1,−0.0544,-0.0544,True,study1_metrics
+C1,24,7,2,1,1.1433,1.1433,True,study1_metrics
+C1,24,7,3,1,2.051,2.051,True,study1_metrics
+C1,24,7,4,1,0.1364,0.1364,True,study1_metrics
+C1,24,7,5,1,1.3850,1.3850,True,study1_metrics
+C1,24,7,6,1,0.858,0.858,True,study1_metrics
+C1,24,7,7,1,0.0670,0.0670,True,study1_metrics
+C1,24,8,2,1,1.1319,1.1319,True,study1_metrics
+C1,24,8,3,1,2.698,2.698,True,study1_metrics
+C1,24,8,4,1,−0.1339,-0.1339,True,study1_metrics
+C1,24,8,5,1,1.3745,1.3745,True,study1_metrics
+C1,24,8,6,1,1.169,1.169,True,study1_metrics
+C1,24,8,7,1,−0.2583,-0.2583,True,study1_metrics
+C1,24,9,2,1,1.1261,1.1261,True,study1_metrics
+C1,24,9,3,1,2.250,2.250,True,study1_metrics
+C1,24,9,4,1,0.0897,0.0897,True,study1_metrics
+C1,24,9,5,1,1.3620,1.3620,True,study1_metrics
+C1,24,9,6,1,0.899,0.899,True,study1_metrics
+C1,24,9,7,1,0.0861,0.0861,True,study1_metrics
+C1,24,10,2,1,1.1409,1.1409,True,study1_metrics
+C1,24,10,3,1,2.559,2.559,True,study1_metrics
+C1,24,10,4,1,−0.0407,-0.0407,True,study1_metrics
+C1,24,10,5,1,1.3911,1.3911,True,study1_metrics
+C1,24,10,6,1,1.076,1.076,True,study1_metrics
+C1,24,10,7,1,−0.1142,-0.1142,True,study1_metrics
+C1,24,11,2,1,1.1434,1.1434,True,study1_metrics
+C1,24,11,3,1,2.573,2.573,True,study1_metrics
+C1,24,11,4,1,−0.0475,-0.0475,True,study1_metrics
+C1,24,11,5,1,1.3961,1.3961,True,study1_metrics
+C1,24,11,6,1,1.086,1.086,True,study1_metrics
+C1,24,11,7,1,−0.1266,-0.1266,True,study1_metrics
+C1,24,12,2,1,1.1307,1.1307,True,study1_metrics
+C1,24,12,3,1,2.357,2.357,True,study1_metrics
+C1,24,12,4,1,0.0042,0.0042,True,study1_metrics
+C1,24,12,5,1,1.3701,1.3701,True,study1_metrics
+C1,24,12,6,1,0.999,0.999,True,study1_metrics
+C1,24,12,7,1,−0.0815,-0.0815,True,study1_metrics
+C1,24,13,2,1,1.1179,1.1179,True,study1_metrics
+C1,24,13,3,1,2.723,2.723,True,study1_metrics
+C1,24,13,4,1,−0.1495,-0.1495,True,study1_metrics
+C1,24,13,5,1,1.3529,1.3529,True,study1_metrics
+C1,24,13,6,1,1.239,1.239,True,study1_metrics
+C1,24,13,7,1,−0.3230,-0.3230,True,study1_metrics
+C2,24,1,2,1,99%,99,True,study1_secondary99
+C2,24,1,5,1,−0.0138,-0.0138,True,study1_secondary99
+C2,24,1,6,1,"[−0.0396, 0.0070]",-0.0396,True,study1_secondary99
+C2,24,1,6,2,"[−0.0396, 0.0070]",0.0070,True,study1_secondary99
+C2,24,1,7,1,0.1242,0.1242,True,study1_secondary99
+C2,24,1,8,1,0.2218,0.2218,True,study1_secondary99
+C2,24,2,2,1,99%,99,True,study1_secondary99
+C2,24,2,5,1,−0.0358,-0.0358,True,study1_secondary99
+C2,24,2,6,1,"[−0.0526, −0.0212]",-0.0526,True,study1_secondary99
+C2,24,2,6,2,"[−0.0526, −0.0212]",-0.0212,True,study1_secondary99
+C2,24,2,7,1,0.0003,0.0003,True,study1_secondary99
+C2,24,2,8,1,0.0009,0.0009,True,study1_secondary99
+C2,24,3,2,1,99%,99,True,study1_secondary99
+C2,24,3,5,1,−0.0114,-0.0114,True,study1_secondary99
+C2,24,3,6,1,"[−0.0315, 0.0034]",-0.0315,True,study1_secondary99
+C2,24,3,6,2,"[−0.0315, 0.0034]",0.0034,True,study1_secondary99
+C2,24,3,7,1,0.1109,0.1109,True,study1_secondary99
+C2,24,3,8,1,0.2218,0.2218,True,study1_secondary99
+C2,24,4,2,1,97.5%,97.5,True,study1_secondary99
+C2,24,4,5,1,−0.0117,-0.0117,True,study1_secondary99
+C2,24,4,6,1,"[−0.0244, −0.0005]",-0.0244,True,study1_secondary99
+C2,24,4,6,2,"[−0.0244, −0.0005]",-0.0005,True,study1_secondary99
+C2,24,4,7,1,0.0356,0.0356,True,study1_secondary99
+C2,24,5,2,1,97.5%,97.5,True,study1_secondary99
+C2,24,5,5,1,−0.0181,-0.0181,True,study1_secondary99
+C2,24,5,6,1,"[−0.0270, −0.0099]",-0.0270,True,study1_secondary99
+C2,24,5,6,2,"[−0.0270, −0.0099]",-0.0099,True,study1_secondary99
+C2,24,5,7,1,0.0001,0.0001,True,study1_secondary99
+C2,24,6,2,1,97.5%,97.5,True,study1_secondary99
+C2,24,6,5,1,−0.0093,-0.0093,True,study1_secondary99
+C2,24,6,6,1,"[−0.0173, −0.0025]",-0.0173,True,study1_secondary99
+C2,24,6,6,2,"[−0.0173, −0.0025]",-0.0025,True,study1_secondary99
+C2,24,6,7,1,0.0127,0.0127,True,study1_secondary99
+C2,24,7,2,1,99%,99,True,study1_secondary99
+C2,24,7,5,1,−0.0153,-0.0153,True,study1_secondary99
+C2,24,7,6,1,"[−0.0411, 0.0060]",-0.0411,True,study1_secondary99
+C2,24,7,6,2,"[−0.0411, 0.0060]",0.0060,True,study1_secondary99
+C2,24,7,7,1,0.1065,0.1065,True,study1_secondary99
+C2,24,8,2,1,99%,99,True,study1_secondary99
+C2,24,8,5,1,−0.0297,-0.0297,True,study1_secondary99
+C2,24,8,6,1,"[−0.0467, −0.0149]",-0.0467,True,study1_secondary99
+C2,24,8,6,2,"[−0.0467, −0.0149]",-0.0149,True,study1_secondary99
+C2,24,8,7,1,0.0008,0.0008,True,study1_secondary99
+C2,24,9,2,1,99%,99,True,study1_secondary99
+C2,24,9,5,1,−0.0103,-0.0103,True,study1_secondary99
+C2,24,9,6,1,"[−0.0287, 0.0042]",-0.0287,True,study1_secondary99
+C2,24,9,6,2,"[−0.0287, 0.0042]",0.0042,True,study1_secondary99
+C2,24,9,7,1,0.1208,0.1208,True,study1_secondary99
+C3,25,1,2,1,0.7120,0.7120,True,study2_allarms
+C3,25,1,3,1,3.227,3.227,True,study2_allarms
+C3,25,1,4,1,−0.3282,-0.3282,True,study2_allarms
+C3,25,1,5,1,0.9783,0.9783,True,study2_allarms
+C3,25,1,6,1,1.241,1.241,True,study2_allarms
+C3,25,1,7,1,−0.3490,-0.3490,True,study2_allarms
+C3,25,2,2,1,0.7049,0.7049,True,study2_allarms
+C3,25,2,3,1,2.548,2.548,True,study2_allarms
+C3,25,2,4,1,−0.0186,-0.0186,True,study2_allarms
+C3,25,2,5,1,0.9751,0.9751,True,study2_allarms
+C3,25,2,6,1,0.960,0.960,True,study2_allarms
+C3,25,2,7,1,0.0196,0.0196,True,study2_allarms
+C3,25,3,2,1,0.7071,0.7071,True,study2_allarms
+C3,25,3,3,1,2.449,2.449,True,study2_allarms
+C3,25,3,4,1,0.0209,0.0209,True,study2_allarms
+C3,25,3,5,1,0.9747,0.9747,True,study2_allarms
+C3,25,3,6,1,0.910,0.910,True,study2_allarms
+C3,25,3,7,1,0.0888,0.0888,True,study2_allarms
+C3,25,4,2,1,0.7103,0.7103,True,study2_allarms
+C3,25,4,3,1,2.565,2.565,True,study2_allarms
+C3,25,4,4,1,−0.0317,-0.0317,True,study2_allarms
+C3,25,4,5,1,0.9828,0.9828,True,study2_allarms
+C3,25,4,6,1,1.092,1.092,True,study2_allarms
+C3,25,4,7,1,−0.0761,-0.0761,True,study2_allarms
+C3,25,5,2,1,0.7107,0.7107,True,study2_allarms
+C3,25,5,3,1,2.581,2.581,True,study2_allarms
+C3,25,5,4,1,−0.0358,-0.0358,True,study2_allarms
+C3,25,5,5,1,0.9859,0.9859,True,study2_allarms
+C3,25,5,6,1,1.092,1.092,True,study2_allarms
+C3,25,5,7,1,−0.0783,-0.0783,True,study2_allarms
+C3,25,6,2,1,0.7054,0.7054,True,study2_allarms
+C3,25,6,3,1,2.499,2.499,True,study2_allarms
+C3,25,6,4,1,−0.0561,-0.0561,True,study2_allarms
+C3,25,6,5,1,0.9687,0.9687,True,study2_allarms
+C3,25,6,6,1,0.993,0.993,True,study2_allarms
+C3,25,6,7,1,−0.0965,-0.0965,True,study2_allarms
+C3,25,7,2,1,0.7120,0.7120,True,study2_allarms
+C3,25,7,3,1,2.317,2.317,True,study2_allarms
+C3,25,7,4,1,0.0199,0.0199,True,study2_allarms
+C3,25,7,5,1,0.9744,0.9744,True,study2_allarms
+C3,25,7,6,1,0.860,0.860,True,study2_allarms
+C3,25,7,7,1,0.0526,0.0526,True,study2_allarms
+C3,25,8,2,1,0.7195,0.7195,True,study2_allarms
+C3,25,8,3,1,3.111,3.111,True,study2_allarms
+C3,25,8,4,1,−0.2835,-0.2835,True,study2_allarms
+C3,25,8,5,1,0.9884,0.9884,True,study2_allarms
+C3,25,8,6,1,1.241,1.241,True,study2_allarms
+C3,25,8,7,1,−0.3349,-0.3349,True,study2_allarms
+C3,25,9,2,1,0.7162,0.7162,True,study2_allarms
+C3,25,9,3,1,2.565,2.565,True,study2_allarms
+C3,25,9,4,1,−0.0248,-0.0248,True,study2_allarms
+C3,25,9,5,1,0.9859,0.9859,True,study2_allarms
+C3,25,9,6,1,0.976,0.976,True,study2_allarms
+C3,25,9,7,1,0.0140,0.0140,True,study2_allarms
+C3,25,10,2,1,0.7213,0.7213,True,study2_allarms
+C3,25,10,3,1,2.697,2.697,True,study2_allarms
+C3,25,10,4,1,−0.0680,-0.0680,True,study2_allarms
+C3,25,10,5,1,0.9957,0.9957,True,study2_allarms
+C3,25,10,6,1,1.043,1.043,True,study2_allarms
+C3,25,10,7,1,−0.0459,-0.0459,True,study2_allarms
+C3,25,11,2,1,0.7228,0.7228,True,study2_allarms
+C3,25,11,3,1,2.730,2.730,True,study2_allarms
+C3,25,11,4,1,−0.0772,-0.0772,True,study2_allarms
+C3,25,11,5,1,0.9997,0.9997,True,study2_allarms
+C3,25,11,6,1,1.076,1.076,True,study2_allarms
+C3,25,11,7,1,−0.0699,-0.0699,True,study2_allarms
+C3,25,12,2,1,0.7146,0.7146,True,study2_allarms
+C3,25,12,3,1,2.548,2.548,True,study2_allarms
+C3,25,12,4,1,−0.0643,-0.0643,True,study2_allarms
+C3,25,12,5,1,0.9801,0.9801,True,study2_allarms
+C3,25,12,6,1,0.976,0.976,True,study2_allarms
+C3,25,12,7,1,−0.0729,-0.0729,True,study2_allarms
+C3,25,13,2,1,0.7162,0.7162,True,study2_allarms
+C3,25,13,3,1,3.128,3.128,True,study2_allarms
+C3,25,13,4,1,−0.2945,-0.2945,True,study2_allarms
+C3,25,13,5,1,0.9834,0.9834,True,study2_allarms
+C3,25,13,6,1,1.324,1.324,True,study2_allarms
+C3,25,13,7,1,−0.3886,-0.3886,True,study2_allarms
+C4,25,1,1,1,97.5%,97.5,True,study2_crisis
+C4,25,1,2,1,1987-10-19,1987,True,study2_crisis
+C4,25,1,2,2,1987-10-19,-10,True,study2_crisis
+C4,25,1,2,3,1987-10-19,-19,True,study2_crisis
+C4,25,1,4,1,1.5330,1.5330,True,study2_crisis
+C4,25,1,5,1,1.3867,1.3867,True,study2_crisis
+C4,25,1,6,1,−0.1463,-0.1463,True,study2_crisis
+C4,25,2,1,1,97.5%,97.5,True,study2_crisis
+C4,25,2,2,1,1998-08-17,1998,True,study2_crisis
+C4,25,2,2,2,1998-08-17,-08,True,study2_crisis
+C4,25,2,2,3,1998-08-17,-17,True,study2_crisis
+C4,25,2,4,1,2.2129,2.2129,True,study2_crisis
+C4,25,2,5,1,1.9920,1.9920,True,study2_crisis
+C4,25,2,6,1,−0.2209,-0.2209,True,study2_crisis
+C4,25,3,1,1,97.5%,97.5,True,study2_crisis
+C4,25,3,2,1,2001-09-17,2001,True,study2_crisis
+C4,25,3,2,2,2001-09-17,-09,True,study2_crisis
+C4,25,3,2,3,2001-09-17,-17,True,study2_crisis
+C4,25,3,3,1,Reopening after 9/11,9,True,study2_crisis
+C4,25,3,3,2,Reopening after 9/11,11,True,study2_crisis
+C4,25,3,4,1,0.2472,0.2472,True,study2_crisis
+C4,25,3,5,1,0.2745,0.2745,True,study2_crisis
+C4,25,3,6,1,0.0273,0.0273,True,study2_crisis
+C4,25,4,1,1,97.5%,97.5,True,study2_crisis
+C4,25,4,2,1,2008-09-15,2008,True,study2_crisis
+C4,25,4,2,2,2008-09-15,-09,True,study2_crisis
+C4,25,4,2,3,2008-09-15,-15,True,study2_crisis
+C4,25,4,4,1,2.8489,2.8489,True,study2_crisis
+C4,25,4,5,1,2.3893,2.3893,True,study2_crisis
+C4,25,4,6,1,−0.4596,-0.4596,True,study2_crisis
+C4,25,5,1,1,99%,99,True,study2_crisis
+C4,25,5,2,1,1987-10-19,1987,True,study2_crisis
+C4,25,5,2,2,1987-10-19,-10,True,study2_crisis
+C4,25,5,2,3,1987-10-19,-19,True,study2_crisis
+C4,25,5,4,1,1.6388,1.6388,True,study2_crisis
+C4,25,5,5,1,1.2911,1.2911,True,study2_crisis
+C4,25,5,6,1,−0.3477,-0.3477,True,study2_crisis
+C4,25,6,1,1,99%,99,True,study2_crisis
+C4,25,6,2,1,1998-08-17,1998,True,study2_crisis
+C4,25,6,2,2,1998-08-17,-08,True,study2_crisis
+C4,25,6,2,3,1998-08-17,-17,True,study2_crisis
+C4,25,6,4,1,2.7189,2.7189,True,study2_crisis
+C4,25,6,5,1,2.4452,2.4452,True,study2_crisis
+C4,25,6,6,1,−0.2737,-0.2737,True,study2_crisis
+C4,25,7,1,1,99%,99,True,study2_crisis
+C4,25,7,2,1,2001-09-17,2001,True,study2_crisis
+C4,25,7,2,2,2001-09-17,-09,True,study2_crisis
+C4,25,7,2,3,2001-09-17,-17,True,study2_crisis
+C4,25,7,3,1,Reopening after 9/11,9,True,study2_crisis
+C4,25,7,3,2,Reopening after 9/11,11,True,study2_crisis
+C4,25,7,4,1,0.4680,0.4680,True,study2_crisis
+C4,25,7,5,1,0.4834,0.4834,True,study2_crisis
+C4,25,7,6,1,0.0154,0.0154,True,study2_crisis
+C4,25,8,1,1,99%,99,True,study2_crisis
+C4,25,8,2,1,2008-09-15,2008,True,study2_crisis
+C4,25,8,2,2,2008-09-15,-09,True,study2_crisis
+C4,25,8,2,3,2008-09-15,-15,True,study2_crisis
+C4,25,8,4,1,4.1546,4.1546,True,study2_crisis
+C4,25,8,5,1,3.4203,3.4203,True,study2_crisis
+C4,25,8,6,1,−0.7343,-0.7343,True,study2_crisis

@@ -1,0 +1,23 @@
+{
+  "levels": 9044,
+  "missing_levels_removed": 348,
+  "returns": 9043,
+  "first_level": "1974-01-02",
+  "last_level": "2009-12-31",
+  "first_return": "1974-01-03",
+  "estimation_last": "1977-12-29",
+  "mcs_accumulation_first": "1977-12-30",
+  "calibration_first": "1981-12-29",
+  "evaluation_first": "1985-12-24",
+  "evaluation_last": "2009-12-31",
+  "evaluation_days": 6043,
+  "seconds": 374.93071031570435,
+  "refit_failures": {
+    "GARCH_T": 0,
+    "GJR": 0
+  },
+  "forecast_sha256": "7bde3555a16cf16e5eb664aa4bfda71bdedfd79406df13d697aa21c0174a1346",
+  "capture_exact_score_match_all_main_arms": true,
+  "frozen_sources_unchanged": true,
+  "completed_utc": "2026-10-25T03:50:38.468949+00:00"
+}

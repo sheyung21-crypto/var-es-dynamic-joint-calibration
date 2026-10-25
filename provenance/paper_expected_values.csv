@@ -1,0 +1,582 @@
+table,builder,pdf_page,row,field,column,displayed_text,contains_numeric_text,whole_row_verified,source_table
+1,arms,10,1,c1,1,EW,False,True,static method definitions
+1,arms,10,1,c2,2,Equal-weight combination of the ten base VaR and ES forecasts (uncalibrated),False,True,static method definitions
+1,arms,10,2,c1,1,EW+DJC,False,True,static method definitions
+1,arms,10,2,c2,2,DJC applied to EW,False,True,static method definitions
+1,arms,10,3,c1,1,EW+DJC-FIX,False,True,static method definitions
+1,arms,10,3,c2,2,"The four DJC experts applied to EW, with weights fixed at 1/4",True,True,static method definitions
+1,arms,10,4,c1,1,"EW+BCd, EW+BCm",False,True,static method definitions
+1,arms,10,4,c2,2,"Batch calibration of EW, re-estimated daily or every 20 trading days",True,True,static method definitions
+1,arms,10,5,c1,1,"EW+YE, EW+YEf",False,True,static method definitions
+1,arms,10,5,c2,2,"Adapted Ye-type controller on EW, with step size 0.01 or 0.05",True,True,static method definitions
+1,arms,10,6,c1,1,MCS,False,True,static method definitions
+1,arms,10,6,c2,2,Equal-weight combination after MCS selection (uncalibrated),False,True,static method definitions
+1,arms,10,7,c1,1,"MCS+DJC, MCS+BCd,
+MCS+BCm, MCS+YE",False,True,static method definitions
+1,arms,10,7,c2,2,Each calibration method applied to the MCS combination,False,True,static method definitions
+1,arms,10,8,c1,1,GJR,False,True,static method definitions
+1,arms,10,8,c2,2,Single GJR-GARCH-t model,False,True,static method definitions
+2,primary,11,1,c1,1,H1,True,True,study1_primary
+2,primary,11,1,c2,2,EW+DJC − EW,False,True,study1_primary
+2,primary,11,1,c3,3,−0.0079,True,True,study1_primary
+2,primary,11,1,c4,4,"[−0.0197, 0.0018]",True,True,study1_primary
+2,primary,11,1,c5,5,0.0861,True,True,study1_primary
+2,primary,11,1,c6,6,0.0861,True,True,study1_primary
+2,primary,11,2,c1,1,H2,True,True,study1_primary
+2,primary,11,2,c2,2,EW+DJC − EW+BCd,False,True,study1_primary
+2,primary,11,2,c3,3,−0.0208,True,True,study1_primary
+2,primary,11,2,c4,4,"[−0.0306, −0.0125]",True,True,study1_primary
+2,primary,11,2,c5,5,0.0002,True,True,study1_primary
+2,primary,11,2,c6,6,0.0006,True,True,study1_primary
+2,primary,11,3,c1,1,H3,True,True,study1_primary
+2,primary,11,3,c2,2,EW+DJC − EW+YE,False,True,study1_primary
+2,primary,11,3,c3,3,−0.0080,True,True,study1_primary
+2,primary,11,3,c4,4,"[−0.0160, −0.0017]",True,True,study1_primary
+2,primary,11,3,c5,5,0.0239,True,True,study1_primary
+2,primary,11,3,c6,6,0.0478,True,True,study1_primary
+3,secondary,13,1,c1,1,EW+DJC − EW+DJC-FIX,False,True,study1_secondary
+3,secondary,13,1,c2,2,−0.0101,True,True,study1_secondary
+3,secondary,13,1,c3,3,"[−0.0137, −0.0071]",True,True,study1_secondary
+3,secondary,13,2,c1,1,EW+DJC − EW+BCm,False,True,study1_secondary
+3,secondary,13,2,c2,2,−0.0245,True,True,study1_secondary
+3,secondary,13,2,c3,3,"[−0.0361, −0.0146]",True,True,study1_secondary
+3,secondary,13,3,c1,1,EW+DJC − EW+YEf,False,True,study1_secondary
+3,secondary,13,3,c2,2,−0.0099,True,True,study1_secondary
+3,secondary,13,3,c3,3,"[−0.0134, −0.0066]",True,True,study1_secondary
+3,secondary,13,4,c1,1,EW+DJC − GJR,False,True,study1_secondary
+3,secondary,13,4,c2,2,0.0156,True,True,study1_secondary
+3,secondary,13,4,c3,3,"[0.0041, 0.0265]",True,True,study1_secondary
+3,secondary,13,5,c1,1,MCS − EW,False,True,study1_secondary
+3,secondary,13,5,c2,2,−0.0095,True,True,study1_secondary
+3,secondary,13,5,c3,3,"[−0.0163, −0.0026]",True,True,study1_secondary
+3,secondary,13,6,c1,1,MCS+DJC − MCS,False,True,study1_secondary
+3,secondary,13,6,c2,2,−0.0058,True,True,study1_secondary
+3,secondary,13,6,c3,3,"[−0.0162, 0.0030]",True,True,study1_secondary
+3,secondary,13,7,c1,1,MCS+DJC − EW+DJC,False,True,study1_secondary
+3,secondary,13,7,c2,2,−0.0074,True,True,study1_secondary
+3,secondary,13,7,c3,3,"[−0.0127, −0.0020]",True,True,study1_secondary
+3,secondary,13,8,c1,1,MCS+BCd − EW+BCd,False,True,study1_secondary
+3,secondary,13,8,c2,2,−0.0134,True,True,study1_secondary
+3,secondary,13,8,c3,3,"[−0.0200, −0.0072]",True,True,study1_secondary
+3,secondary,13,9,c1,1,MCS+YE − EW+YE,False,True,study1_secondary
+3,secondary,13,9,c2,2,−0.0108,True,True,study1_secondary
+3,secondary,13,9,c3,3,"[−0.0173, −0.0048]",True,True,study1_secondary
+4,crisis_us,14,1,c1,1,1987-10-19,True,True,study1_crisis
+4,crisis_us,14,1,c2,2,Black Monday,False,True,study1_crisis
+4,crisis_us,14,1,c3,3,4.9084,True,True,study1_crisis
+4,crisis_us,14,1,c4,4,4.1914,True,True,study1_crisis
+4,crisis_us,14,1,c5,5,−0.7169,True,True,study1_crisis
+4,crisis_us,14,2,c1,1,1998-08-17,True,True,study1_crisis
+4,crisis_us,14,2,c2,2,Russian default,False,True,study1_crisis
+4,crisis_us,14,2,c3,3,2.2977,True,True,study1_crisis
+4,crisis_us,14,2,c4,4,2.0573,True,True,study1_crisis
+4,crisis_us,14,2,c5,5,−0.2404,True,True,study1_crisis
+4,crisis_us,14,3,c1,1,2001-09-17,True,True,study1_crisis
+4,crisis_us,14,3,c2,2,Reopening after 9/11,True,True,study1_crisis
+4,crisis_us,14,3,c3,3,2.0506,True,True,study1_crisis
+4,crisis_us,14,3,c4,4,2.0335,True,True,study1_crisis
+4,crisis_us,14,3,c5,5,−0.0171,True,True,study1_crisis
+4,crisis_us,14,4,c1,1,2008-09-15,True,True,study1_crisis
+4,crisis_us,14,4,c2,2,Lehman bankruptcy,False,True,study1_crisis
+4,crisis_us,14,4,c3,3,3.5367,True,True,study1_crisis
+4,crisis_us,14,4,c4,4,2.8579,True,True,study1_crisis
+4,crisis_us,14,4,c5,5,−0.6788,True,True,study1_crisis
+4,crisis_us,14,5,c1,1,2011-08-08,True,True,study1_crisis
+4,crisis_us,14,5,c2,2,US rating downgrade,False,True,study1_crisis
+4,crisis_us,14,5,c3,3,2.2504,True,True,study1_crisis
+4,crisis_us,14,5,c4,4,2.1504,True,True,study1_crisis
+4,crisis_us,14,5,c5,5,−0.1000,True,True,study1_crisis
+4,crisis_us,14,6,c1,1,2015-08-24,True,True,study1_crisis
+4,crisis_us,14,6,c2,2,Global sell-off,False,True,study1_crisis
+4,crisis_us,14,6,c3,3,1.5493,True,True,study1_crisis
+4,crisis_us,14,6,c4,4,1.4905,True,True,study1_crisis
+4,crisis_us,14,6,c5,5,−0.0588,True,True,study1_crisis
+4,crisis_us,14,7,c1,1,2020-02-24,True,True,study1_crisis
+4,crisis_us,14,7,c2,2,COVID-19 outbreak,True,True,study1_crisis
+4,crisis_us,14,7,c3,3,4.3214,True,True,study1_crisis
+4,crisis_us,14,7,c4,4,3.5156,True,True,study1_crisis
+4,crisis_us,14,7,c5,5,−0.8058,True,True,study1_crisis
+5,yen_tests,15,1,c1,1,97.5%,True,True,study2_tests
+5,yen_tests,15,1,c2,2,3.26,True,True,study2_tests
+5,yen_tests,15,1,c3,3,−0.0071,True,True,study2_tests
+5,yen_tests,15,1,c4,4,"[−0.0243, 0.0089]",True,True,study2_tests
+5,yen_tests,15,1,c5,5,0.1973,True,True,study2_tests
+5,yen_tests,15,2,c1,1,97.5%,True,True,study2_tests
+5,yen_tests,15,2,c2,2,20,True,True,study2_tests
+5,yen_tests,15,2,c3,3,−0.0071,True,True,study2_tests
+5,yen_tests,15,2,c4,4,"[−0.0246, 0.0085]",True,True,study2_tests
+5,yen_tests,15,2,c5,5,0.1970,True,True,study2_tests
+5,yen_tests,15,3,c1,1,97.5%,True,True,study2_tests
+5,yen_tests,15,3,c2,2,60,True,True,study2_tests
+5,yen_tests,15,3,c3,3,−0.0071,True,True,study2_tests
+5,yen_tests,15,3,c4,4,"[−0.0237, 0.0078]",True,True,study2_tests
+5,yen_tests,15,3,c5,5,0.1849,True,True,study2_tests
+5,yen_tests,15,4,c1,1,97.5%,True,True,study2_tests
+5,yen_tests,15,4,c2,2,250,True,True,study2_tests
+5,yen_tests,15,4,c3,3,−0.0071,True,True,study2_tests
+5,yen_tests,15,4,c4,4,"[−0.0211, 0.0059]",True,True,study2_tests
+5,yen_tests,15,4,c5,5,0.1521,True,True,study2_tests
+5,yen_tests,15,5,c1,1,99%,True,True,study2_tests
+5,yen_tests,15,5,c2,2,5.05,True,True,study2_tests
+5,yen_tests,15,5,c3,3,−0.0032,True,True,study2_tests
+5,yen_tests,15,5,c4,4,"[−0.0315, 0.0234]",True,True,study2_tests
+5,yen_tests,15,5,c5,5,0.3934,True,True,study2_tests
+5,yen_tests,15,6,c1,1,99%,True,True,study2_tests
+5,yen_tests,15,6,c2,2,20,True,True,study2_tests
+5,yen_tests,15,6,c3,3,−0.0032,True,True,study2_tests
+5,yen_tests,15,6,c4,4,"[−0.0310, 0.0220]",True,True,study2_tests
+5,yen_tests,15,6,c5,5,0.3984,True,True,study2_tests
+5,yen_tests,15,7,c1,1,99%,True,True,study2_tests
+5,yen_tests,15,7,c2,2,60,True,True,study2_tests
+5,yen_tests,15,7,c3,3,−0.0032,True,True,study2_tests
+5,yen_tests,15,7,c4,4,"[−0.0296, 0.0202]",True,True,study2_tests
+5,yen_tests,15,7,c5,5,0.3873,True,True,study2_tests
+5,yen_tests,15,8,c1,1,99%,True,True,study2_tests
+5,yen_tests,15,8,c2,2,250,True,True,study2_tests
+5,yen_tests,15,8,c3,3,−0.0032,True,True,study2_tests
+5,yen_tests,15,8,c4,4,"[−0.0258, 0.0168]",True,True,study2_tests
+5,yen_tests,15,8,c5,5,0.3670,True,True,study2_tests
+6,yen_comparators,15,1,c1,1,97.5%,True,True,study2_comparators
+6,yen_comparators,15,1,c2,2,EW+DJC − EW+BCd,False,True,study2_comparators
+6,yen_comparators,15,1,c3,3,−0.0053,True,True,study2_comparators
+6,yen_comparators,15,1,c4,4,"[−0.0124, 0.0018]",True,True,study2_comparators
+6,yen_comparators,15,2,c1,1,97.5%,True,True,study2_comparators
+6,yen_comparators,15,2,c2,2,EW+DJC − EW+YE,False,True,study2_comparators
+6,yen_comparators,15,2,c3,3,−0.0005,True,True,study2_comparators
+6,yen_comparators,15,2,c4,4,"[−0.0087, 0.0068]",True,True,study2_comparators
+6,yen_comparators,15,3,c1,1,97.5%,True,True,study2_comparators
+6,yen_comparators,15,3,c2,2,EW+DJC − GJR,False,True,study2_comparators
+6,yen_comparators,15,3,c3,3,−0.0113,True,True,study2_comparators
+6,yen_comparators,15,3,c4,4,"[−0.0358, 0.0126]",True,True,study2_comparators
+6,yen_comparators,15,4,c1,1,97.5%,True,True,study2_comparators
+6,yen_comparators,15,4,c2,2,EW+DJC − EW+DJC-FIX,False,True,study2_comparators
+6,yen_comparators,15,4,c3,3,−0.0022,True,True,study2_comparators
+6,yen_comparators,15,4,c4,4,"[−0.0074, 0.0033]",True,True,study2_comparators
+6,yen_comparators,15,5,c1,1,99%,True,True,study2_comparators
+6,yen_comparators,15,5,c2,2,EW+DJC − EW+BCd,False,True,study2_comparators
+6,yen_comparators,15,5,c3,3,−0.0077,True,True,study2_comparators
+6,yen_comparators,15,5,c4,4,"[−0.0234, 0.0083]",True,True,study2_comparators
+6,yen_comparators,15,6,c1,1,99%,True,True,study2_comparators
+6,yen_comparators,15,6,c2,2,EW+DJC − EW+YE,False,True,study2_comparators
+6,yen_comparators,15,6,c3,3,0.0064,True,True,study2_comparators
+6,yen_comparators,15,6,c4,4,"[−0.0075, 0.0196]",True,True,study2_comparators
+6,yen_comparators,15,7,c1,1,99%,True,True,study2_comparators
+6,yen_comparators,15,7,c2,2,EW+DJC − GJR,False,True,study2_comparators
+6,yen_comparators,15,7,c3,3,−0.0083,True,True,study2_comparators
+6,yen_comparators,15,7,c4,4,"[−0.0531, 0.0310]",True,True,study2_comparators
+6,yen_comparators,15,8,c1,1,99%,True,True,study2_comparators
+6,yen_comparators,15,8,c2,2,EW+DJC − EW+DJC-FIX,False,True,study2_comparators
+6,yen_comparators,15,8,c3,3,0.0004,True,True,study2_comparators
+6,yen_comparators,15,8,c4,4,"[−0.0099, 0.0119]",True,True,study2_comparators
+7,yen_appreciation,16,1,c1,1,97.5%,True,True,study2_appreciation
+7,yen_appreciation,16,1,c2,2,Sharp appreciation,False,True,study2_appreciation
+7,yen_appreciation,16,1,c3,3,605,True,True,study2_appreciation
+7,yen_appreciation,16,1,c4,4,−0.1516,True,True,study2_appreciation
+7,yen_appreciation,16,1,c5,5,"[−0.2289, −0.0744]",True,True,study2_appreciation
+7,yen_appreciation,16,2,c1,1,97.5%,True,True,study2_appreciation
+7,yen_appreciation,16,2,c2,2,Other days,False,True,study2_appreciation
+7,yen_appreciation,16,2,c3,3,"5,438",True,True,study2_appreciation
+7,yen_appreciation,16,2,c4,4,0.0090,True,True,study2_appreciation
+7,yen_appreciation,16,2,c5,5,"[−0.0029, 0.0209]",True,True,study2_appreciation
+7,yen_appreciation,16,3,c1,1,99%,True,True,study2_appreciation
+7,yen_appreciation,16,3,c2,2,Sharp appreciation,False,True,study2_appreciation
+7,yen_appreciation,16,3,c3,3,605,True,True,study2_appreciation
+7,yen_appreciation,16,3,c4,4,−0.2041,True,True,study2_appreciation
+7,yen_appreciation,16,3,c5,5,"[−0.3418, −0.0664]",True,True,study2_appreciation
+7,yen_appreciation,16,4,c1,1,99%,True,True,study2_appreciation
+7,yen_appreciation,16,4,c2,2,Other days,False,True,study2_appreciation
+7,yen_appreciation,16,4,c3,3,"5,438",True,True,study2_appreciation
+7,yen_appreciation,16,4,c4,4,0.0191,True,True,study2_appreciation
+7,yen_appreciation,16,4,c5,5,"[0.0023, 0.0359]",True,True,study2_appreciation
+8,yen_tertiles,17,1,c1,1,97.5%,True,True,study2_tertiles
+8,yen_tertiles,17,1,c2,2,Low,False,True,study2_tertiles
+8,yen_tertiles,17,1,c3,3,"2,635",True,True,study2_tertiles
+8,yen_tertiles,17,1,c4,4,"[−0.017, 0.003]",True,True,study2_tertiles
+8,yen_tertiles,17,1,c5,5,−0.0003,True,True,study2_tertiles
+8,yen_tertiles,17,1,c6,6,"[−0.0124, 0.0117]",True,True,study2_tertiles
+8,yen_tertiles,17,2,c1,1,97.5%,True,True,study2_tertiles
+8,yen_tertiles,17,2,c2,2,Middle,False,True,study2_tertiles
+8,yen_tertiles,17,2,c3,3,"2,043",True,True,study2_tertiles
+8,yen_tertiles,17,2,c4,4,"[0.007, 0.015]",True,True,study2_tertiles
+8,yen_tertiles,17,2,c5,5,−0.0389,True,True,study2_tertiles
+8,yen_tertiles,17,2,c6,6,"[−0.0725, −0.0052]",True,True,study2_tertiles
+8,yen_tertiles,17,3,c1,1,97.5%,True,True,study2_tertiles
+8,yen_tertiles,17,3,c2,2,High,False,True,study2_tertiles
+8,yen_tertiles,17,3,c3,3,"1,365",True,True,study2_tertiles
+8,yen_tertiles,17,3,c4,4,"[0.019, 0.035]",True,True,study2_tertiles
+8,yen_tertiles,17,3,c5,5,0.0275,True,True,study2_tertiles
+8,yen_tertiles,17,3,c6,6,"[−0.0048, 0.0597]",True,True,study2_tertiles
+8,yen_tertiles,17,4,c1,1,99%,True,True,study2_tertiles
+8,yen_tertiles,17,4,c2,2,Low,False,True,study2_tertiles
+8,yen_tertiles,17,4,c3,3,"2,484",True,True,study2_tertiles
+8,yen_tertiles,17,4,c4,4,"[−0.010, −0.002]",True,True,study2_tertiles
+8,yen_tertiles,17,4,c5,5,−0.0146,True,True,study2_tertiles
+8,yen_tertiles,17,4,c6,6,"[−0.0484, 0.0191]",True,True,study2_tertiles
+8,yen_tertiles,17,5,c1,1,99%,True,True,study2_tertiles
+8,yen_tertiles,17,5,c2,2,Middle,False,True,study2_tertiles
+8,yen_tertiles,17,5,c3,3,"1,906",True,True,study2_tertiles
+8,yen_tertiles,17,5,c4,4,"[0.002, 0.006]",True,True,study2_tertiles
+8,yen_tertiles,17,5,c5,5,−0.0129,True,True,study2_tertiles
+8,yen_tertiles,17,5,c6,6,"[−0.0564, 0.0307]",True,True,study2_tertiles
+8,yen_tertiles,17,6,c1,1,99%,True,True,study2_tertiles
+8,yen_tertiles,17,6,c2,2,High,False,True,study2_tertiles
+8,yen_tertiles,17,6,c3,3,"1,653",True,True,study2_tertiles
+8,yen_tertiles,17,6,c4,4,"[0.010, 0.022]",True,True,study2_tertiles
+8,yen_tertiles,17,6,c5,5,0.0251,True,True,study2_tertiles
+8,yen_tertiles,17,6,c6,6,"[−0.0340, 0.0842]",True,True,study2_tertiles
+9,robustness,19,1,c1,1,H1,True,True,study1_robustness
+9,robustness,19,1,c2,2,EW+DJC − EW,False,True,study1_robustness
+9,robustness,19,1,c3,3,20,True,True,study1_robustness
+9,robustness,19,1,c4,4,−0.0079,True,True,study1_robustness
+9,robustness,19,1,c5,5,"[−0.0227, 0.0041]",True,True,study1_robustness
+9,robustness,19,1,c6,6,0.1291,True,True,study1_robustness
+9,robustness,19,2,c1,1,H1,True,True,study1_robustness
+9,robustness,19,2,c2,2,EW+DJC − EW,False,True,study1_robustness
+9,robustness,19,2,c3,3,60,True,True,study1_robustness
+9,robustness,19,2,c4,4,−0.0079,True,True,study1_robustness
+9,robustness,19,2,c5,5,"[−0.0228, 0.0045]",True,True,study1_robustness
+9,robustness,19,2,c6,6,0.1343,True,True,study1_robustness
+9,robustness,19,3,c1,1,H1,True,True,study1_robustness
+9,robustness,19,3,c2,2,EW+DJC − EW,False,True,study1_robustness
+9,robustness,19,3,c3,3,250,True,True,study1_robustness
+9,robustness,19,3,c4,4,−0.0079,True,True,study1_robustness
+9,robustness,19,3,c5,5,"[−0.0208, 0.0034]",True,True,study1_robustness
+9,robustness,19,3,c6,6,0.1031,True,True,study1_robustness
+9,robustness,19,4,c1,1,H2,True,True,study1_robustness
+9,robustness,19,4,c2,2,EW+DJC − EW+BCd,False,True,study1_robustness
+9,robustness,19,4,c3,3,20,True,True,study1_robustness
+9,robustness,19,4,c4,4,−0.0208,True,True,study1_robustness
+9,robustness,19,4,c5,5,"[−0.0325, −0.0109]",True,True,study1_robustness
+9,robustness,19,4,c6,6,0.0005,True,True,study1_robustness
+9,robustness,19,5,c1,1,H2,True,True,study1_robustness
+9,robustness,19,5,c2,2,EW+DJC − EW+BCd,False,True,study1_robustness
+9,robustness,19,5,c3,3,60,True,True,study1_robustness
+9,robustness,19,5,c4,4,−0.0208,True,True,study1_robustness
+9,robustness,19,5,c5,5,"[−0.0320, −0.0110]",True,True,study1_robustness
+9,robustness,19,5,c6,6,0.0005,True,True,study1_robustness
+9,robustness,19,6,c1,1,H2,True,True,study1_robustness
+9,robustness,19,6,c2,2,EW+DJC − EW+BCd,False,True,study1_robustness
+9,robustness,19,6,c3,3,250,True,True,study1_robustness
+9,robustness,19,6,c4,4,−0.0208,True,True,study1_robustness
+9,robustness,19,6,c5,5,"[−0.0313, −0.0109]",True,True,study1_robustness
+9,robustness,19,6,c6,6,0.0002,True,True,study1_robustness
+9,robustness,19,7,c1,1,H3,True,True,study1_robustness
+9,robustness,19,7,c2,2,EW+DJC − EW+YE,False,True,study1_robustness
+9,robustness,19,7,c3,3,20,True,True,study1_robustness
+9,robustness,19,7,c4,4,−0.0080,True,True,study1_robustness
+9,robustness,19,7,c5,5,"[−0.0174, −0.0005]",True,True,study1_robustness
+9,robustness,19,7,c6,6,0.0471,True,True,study1_robustness
+9,robustness,19,8,c1,1,H3,True,True,study1_robustness
+9,robustness,19,8,c2,2,EW+DJC − EW+YE,False,True,study1_robustness
+9,robustness,19,8,c3,3,60,True,True,study1_robustness
+9,robustness,19,8,c4,4,−0.0080,True,True,study1_robustness
+9,robustness,19,8,c5,5,"[−0.0173, −0.0006]",True,True,study1_robustness
+9,robustness,19,8,c6,6,0.0436,True,True,study1_robustness
+9,robustness,19,9,c1,1,H3,True,True,study1_robustness
+9,robustness,19,9,c2,2,EW+DJC − EW+YE,False,True,study1_robustness
+9,robustness,19,9,c3,3,250,True,True,study1_robustness
+9,robustness,19,9,c4,4,−0.0080,True,True,study1_robustness
+9,robustness,19,9,c5,5,"[−0.0164, −0.0011]",True,True,study1_robustness
+9,robustness,19,9,c6,6,0.0297,True,True,study1_robustness
+C1,metrics_us,24,1,c1,1,EW,False,True,study1_metrics
+C1,metrics_us,24,1,c2,2,1.1414,True,True,study1_metrics
+C1,metrics_us,24,1,c3,3,2.604,True,True,study1_metrics
+C1,metrics_us,24,1,c4,4,−0.0897,True,True,study1_metrics
+C1,metrics_us,24,1,c5,5,1.3829,True,True,study1_metrics
+C1,metrics_us,24,1,c6,6,1.126,True,True,study1_metrics
+C1,metrics_us,24,1,c7,7,−0.2073,True,True,study1_metrics
+C1,metrics_us,24,2,c1,1,EW+DJC,False,True,study1_metrics
+C1,metrics_us,24,2,c2,2,1.1335,True,True,study1_metrics
+C1,metrics_us,24,2,c3,3,2.178,True,True,study1_metrics
+C1,metrics_us,24,2,c4,4,0.1209,True,True,study1_metrics
+C1,metrics_us,24,2,c5,5,1.3691,True,True,study1_metrics
+C1,metrics_us,24,2,c6,6,0.863,True,True,study1_metrics
+C1,metrics_us,24,2,c7,7,0.1222,True,True,study1_metrics
+C1,metrics_us,24,3,c1,1,EW+DJC-FIX,False,True,study1_metrics
+C1,metrics_us,24,3,c2,2,1.1436,True,True,study1_metrics
+C1,metrics_us,24,3,c3,3,2.144,True,True,study1_metrics
+C1,metrics_us,24,3,c4,4,0.1387,True,True,study1_metrics
+C1,metrics_us,24,3,c5,5,1.3939,True,True,study1_metrics
+C1,metrics_us,24,3,c6,6,0.817,True,True,study1_metrics
+C1,metrics_us,24,3,c7,7,0.1775,True,True,study1_metrics
+C1,metrics_us,24,4,c1,1,EW+BCd,False,True,study1_metrics
+C1,metrics_us,24,4,c2,2,1.1543,True,True,study1_metrics
+C1,metrics_us,24,4,c3,3,2.565,True,True,study1_metrics
+C1,metrics_us,24,4,c4,4,−0.0469,True,True,study1_metrics
+C1,metrics_us,24,4,c5,5,1.4049,True,True,study1_metrics
+C1,metrics_us,24,4,c6,6,1.098,True,True,study1_metrics
+C1,metrics_us,24,4,c7,7,−0.1343,True,True,study1_metrics
+C1,metrics_us,24,5,c1,1,EW+BCm,False,True,study1_metrics
+C1,metrics_us,24,5,c2,2,1.1580,True,True,study1_metrics
+C1,metrics_us,24,5,c3,3,2.578,True,True,study1_metrics
+C1,metrics_us,24,5,c4,4,−0.0542,True,True,study1_metrics
+C1,metrics_us,24,5,c5,5,1.4112,True,True,study1_metrics
+C1,metrics_us,24,5,c6,6,1.112,True,True,study1_metrics
+C1,metrics_us,24,5,c7,7,−0.1522,True,True,study1_metrics
+C1,metrics_us,24,6,c1,1,EW+YE,False,True,study1_metrics
+C1,metrics_us,24,6,c2,2,1.1415,True,True,study1_metrics
+C1,metrics_us,24,6,c3,3,2.316,True,True,study1_metrics
+C1,metrics_us,24,6,c4,4,0.0265,True,True,study1_metrics
+C1,metrics_us,24,6,c5,5,1.3805,True,True,study1_metrics
+C1,metrics_us,24,6,c6,6,0.976,True,True,study1_metrics
+C1,metrics_us,24,6,c7,7,−0.0544,True,True,study1_metrics
+C1,metrics_us,24,7,c1,1,EW+YEf,False,True,study1_metrics
+C1,metrics_us,24,7,c2,2,1.1433,True,True,study1_metrics
+C1,metrics_us,24,7,c3,3,2.051,True,True,study1_metrics
+C1,metrics_us,24,7,c4,4,0.1364,True,True,study1_metrics
+C1,metrics_us,24,7,c5,5,1.3850,True,True,study1_metrics
+C1,metrics_us,24,7,c6,6,0.858,True,True,study1_metrics
+C1,metrics_us,24,7,c7,7,0.0670,True,True,study1_metrics
+C1,metrics_us,24,8,c1,1,MCS,False,True,study1_metrics
+C1,metrics_us,24,8,c2,2,1.1319,True,True,study1_metrics
+C1,metrics_us,24,8,c3,3,2.698,True,True,study1_metrics
+C1,metrics_us,24,8,c4,4,−0.1339,True,True,study1_metrics
+C1,metrics_us,24,8,c5,5,1.3745,True,True,study1_metrics
+C1,metrics_us,24,8,c6,6,1.169,True,True,study1_metrics
+C1,metrics_us,24,8,c7,7,−0.2583,True,True,study1_metrics
+C1,metrics_us,24,9,c1,1,MCS+DJC,False,True,study1_metrics
+C1,metrics_us,24,9,c2,2,1.1261,True,True,study1_metrics
+C1,metrics_us,24,9,c3,3,2.250,True,True,study1_metrics
+C1,metrics_us,24,9,c4,4,0.0897,True,True,study1_metrics
+C1,metrics_us,24,9,c5,5,1.3620,True,True,study1_metrics
+C1,metrics_us,24,9,c6,6,0.899,True,True,study1_metrics
+C1,metrics_us,24,9,c7,7,0.0861,True,True,study1_metrics
+C1,metrics_us,24,10,c1,1,MCS+BCd,False,True,study1_metrics
+C1,metrics_us,24,10,c2,2,1.1409,True,True,study1_metrics
+C1,metrics_us,24,10,c3,3,2.559,True,True,study1_metrics
+C1,metrics_us,24,10,c4,4,−0.0407,True,True,study1_metrics
+C1,metrics_us,24,10,c5,5,1.3911,True,True,study1_metrics
+C1,metrics_us,24,10,c6,6,1.076,True,True,study1_metrics
+C1,metrics_us,24,10,c7,7,−0.1142,True,True,study1_metrics
+C1,metrics_us,24,11,c1,1,MCS+BCm,False,True,study1_metrics
+C1,metrics_us,24,11,c2,2,1.1434,True,True,study1_metrics
+C1,metrics_us,24,11,c3,3,2.573,True,True,study1_metrics
+C1,metrics_us,24,11,c4,4,−0.0475,True,True,study1_metrics
+C1,metrics_us,24,11,c5,5,1.3961,True,True,study1_metrics
+C1,metrics_us,24,11,c6,6,1.086,True,True,study1_metrics
+C1,metrics_us,24,11,c7,7,−0.1266,True,True,study1_metrics
+C1,metrics_us,24,12,c1,1,MCS+YE,False,True,study1_metrics
+C1,metrics_us,24,12,c2,2,1.1307,True,True,study1_metrics
+C1,metrics_us,24,12,c3,3,2.357,True,True,study1_metrics
+C1,metrics_us,24,12,c4,4,0.0042,True,True,study1_metrics
+C1,metrics_us,24,12,c5,5,1.3701,True,True,study1_metrics
+C1,metrics_us,24,12,c6,6,0.999,True,True,study1_metrics
+C1,metrics_us,24,12,c7,7,−0.0815,True,True,study1_metrics
+C1,metrics_us,24,13,c1,1,GJR,False,True,study1_metrics
+C1,metrics_us,24,13,c2,2,1.1179,True,True,study1_metrics
+C1,metrics_us,24,13,c3,3,2.723,True,True,study1_metrics
+C1,metrics_us,24,13,c4,4,−0.1495,True,True,study1_metrics
+C1,metrics_us,24,13,c5,5,1.3529,True,True,study1_metrics
+C1,metrics_us,24,13,c6,6,1.239,True,True,study1_metrics
+C1,metrics_us,24,13,c7,7,−0.3230,True,True,study1_metrics
+C2,secondary99,24,1,c1,1,US industries,False,True,study1_secondary99
+C2,secondary99,24,1,c2,2,99%,True,True,study1_secondary99
+C2,secondary99,24,1,c3,3,H1,True,True,study1_secondary99
+C2,secondary99,24,1,c4,4,EW+DJC − EW,False,True,study1_secondary99
+C2,secondary99,24,1,c5,5,−0.0138,True,True,study1_secondary99
+C2,secondary99,24,1,c6,6,"[−0.0396, 0.0070]",True,True,study1_secondary99
+C2,secondary99,24,1,c7,7,0.1242,True,True,study1_secondary99
+C2,secondary99,24,1,c8,8,0.2218,True,True,study1_secondary99
+C2,secondary99,24,2,c1,1,US industries,False,True,study1_secondary99
+C2,secondary99,24,2,c2,2,99%,True,True,study1_secondary99
+C2,secondary99,24,2,c3,3,H2,True,True,study1_secondary99
+C2,secondary99,24,2,c4,4,EW+DJC − EW+BCd,False,True,study1_secondary99
+C2,secondary99,24,2,c5,5,−0.0358,True,True,study1_secondary99
+C2,secondary99,24,2,c6,6,"[−0.0526, −0.0212]",True,True,study1_secondary99
+C2,secondary99,24,2,c7,7,0.0003,True,True,study1_secondary99
+C2,secondary99,24,2,c8,8,0.0009,True,True,study1_secondary99
+C2,secondary99,24,3,c1,1,US industries,False,True,study1_secondary99
+C2,secondary99,24,3,c2,2,99%,True,True,study1_secondary99
+C2,secondary99,24,3,c3,3,H3,True,True,study1_secondary99
+C2,secondary99,24,3,c4,4,EW+DJC − EW+YE,False,True,study1_secondary99
+C2,secondary99,24,3,c5,5,−0.0114,True,True,study1_secondary99
+C2,secondary99,24,3,c6,6,"[−0.0315, 0.0034]",True,True,study1_secondary99
+C2,secondary99,24,3,c7,7,0.1109,True,True,study1_secondary99
+C2,secondary99,24,3,c8,8,0.2218,True,True,study1_secondary99
+C2,secondary99,24,4,c1,1,Intl. indices,False,True,study1_secondary99
+C2,secondary99,24,4,c2,2,97.5%,True,True,study1_secondary99
+C2,secondary99,24,4,c3,3,H1,True,True,study1_secondary99
+C2,secondary99,24,4,c4,4,EW+DJC − EW,False,True,study1_secondary99
+C2,secondary99,24,4,c5,5,−0.0117,True,True,study1_secondary99
+C2,secondary99,24,4,c6,6,"[−0.0244, −0.0005]",True,True,study1_secondary99
+C2,secondary99,24,4,c7,7,0.0356,True,True,study1_secondary99
+C2,secondary99,24,4,c8,8,–,False,True,study1_secondary99
+C2,secondary99,24,5,c1,1,Intl. indices,False,True,study1_secondary99
+C2,secondary99,24,5,c2,2,97.5%,True,True,study1_secondary99
+C2,secondary99,24,5,c3,3,H2,True,True,study1_secondary99
+C2,secondary99,24,5,c4,4,EW+DJC − EW+BCd,False,True,study1_secondary99
+C2,secondary99,24,5,c5,5,−0.0181,True,True,study1_secondary99
+C2,secondary99,24,5,c6,6,"[−0.0270, −0.0099]",True,True,study1_secondary99
+C2,secondary99,24,5,c7,7,0.0001,True,True,study1_secondary99
+C2,secondary99,24,5,c8,8,–,False,True,study1_secondary99
+C2,secondary99,24,6,c1,1,Intl. indices,False,True,study1_secondary99
+C2,secondary99,24,6,c2,2,97.5%,True,True,study1_secondary99
+C2,secondary99,24,6,c3,3,H3,True,True,study1_secondary99
+C2,secondary99,24,6,c4,4,EW+DJC − EW+YE,False,True,study1_secondary99
+C2,secondary99,24,6,c5,5,−0.0093,True,True,study1_secondary99
+C2,secondary99,24,6,c6,6,"[−0.0173, −0.0025]",True,True,study1_secondary99
+C2,secondary99,24,6,c7,7,0.0127,True,True,study1_secondary99
+C2,secondary99,24,6,c8,8,–,False,True,study1_secondary99
+C2,secondary99,24,7,c1,1,Intl. indices,False,True,study1_secondary99
+C2,secondary99,24,7,c2,2,99%,True,True,study1_secondary99
+C2,secondary99,24,7,c3,3,H1,True,True,study1_secondary99
+C2,secondary99,24,7,c4,4,EW+DJC − EW,False,True,study1_secondary99
+C2,secondary99,24,7,c5,5,−0.0153,True,True,study1_secondary99
+C2,secondary99,24,7,c6,6,"[−0.0411, 0.0060]",True,True,study1_secondary99
+C2,secondary99,24,7,c7,7,0.1065,True,True,study1_secondary99
+C2,secondary99,24,7,c8,8,–,False,True,study1_secondary99
+C2,secondary99,24,8,c1,1,Intl. indices,False,True,study1_secondary99
+C2,secondary99,24,8,c2,2,99%,True,True,study1_secondary99
+C2,secondary99,24,8,c3,3,H2,True,True,study1_secondary99
+C2,secondary99,24,8,c4,4,EW+DJC − EW+BCd,False,True,study1_secondary99
+C2,secondary99,24,8,c5,5,−0.0297,True,True,study1_secondary99
+C2,secondary99,24,8,c6,6,"[−0.0467, −0.0149]",True,True,study1_secondary99
+C2,secondary99,24,8,c7,7,0.0008,True,True,study1_secondary99
+C2,secondary99,24,8,c8,8,–,False,True,study1_secondary99
+C2,secondary99,24,9,c1,1,Intl. indices,False,True,study1_secondary99
+C2,secondary99,24,9,c2,2,99%,True,True,study1_secondary99
+C2,secondary99,24,9,c3,3,H3,True,True,study1_secondary99
+C2,secondary99,24,9,c4,4,EW+DJC − EW+YE,False,True,study1_secondary99
+C2,secondary99,24,9,c5,5,−0.0103,True,True,study1_secondary99
+C2,secondary99,24,9,c6,6,"[−0.0287, 0.0042]",True,True,study1_secondary99
+C2,secondary99,24,9,c7,7,0.1208,True,True,study1_secondary99
+C2,secondary99,24,9,c8,8,–,False,True,study1_secondary99
+C3,metrics_yen,25,1,c1,1,EW,False,True,study2_allarms
+C3,metrics_yen,25,1,c2,2,0.7120,True,True,study2_allarms
+C3,metrics_yen,25,1,c3,3,3.227,True,True,study2_allarms
+C3,metrics_yen,25,1,c4,4,−0.3282,True,True,study2_allarms
+C3,metrics_yen,25,1,c5,5,0.9783,True,True,study2_allarms
+C3,metrics_yen,25,1,c6,6,1.241,True,True,study2_allarms
+C3,metrics_yen,25,1,c7,7,−0.3490,True,True,study2_allarms
+C3,metrics_yen,25,2,c1,1,EW+DJC,False,True,study2_allarms
+C3,metrics_yen,25,2,c2,2,0.7049,True,True,study2_allarms
+C3,metrics_yen,25,2,c3,3,2.548,True,True,study2_allarms
+C3,metrics_yen,25,2,c4,4,−0.0186,True,True,study2_allarms
+C3,metrics_yen,25,2,c5,5,0.9751,True,True,study2_allarms
+C3,metrics_yen,25,2,c6,6,0.960,True,True,study2_allarms
+C3,metrics_yen,25,2,c7,7,0.0196,True,True,study2_allarms
+C3,metrics_yen,25,3,c1,1,EW+DJC-FIX,False,True,study2_allarms
+C3,metrics_yen,25,3,c2,2,0.7071,True,True,study2_allarms
+C3,metrics_yen,25,3,c3,3,2.449,True,True,study2_allarms
+C3,metrics_yen,25,3,c4,4,0.0209,True,True,study2_allarms
+C3,metrics_yen,25,3,c5,5,0.9747,True,True,study2_allarms
+C3,metrics_yen,25,3,c6,6,0.910,True,True,study2_allarms
+C3,metrics_yen,25,3,c7,7,0.0888,True,True,study2_allarms
+C3,metrics_yen,25,4,c1,1,EW+BCd,False,True,study2_allarms
+C3,metrics_yen,25,4,c2,2,0.7103,True,True,study2_allarms
+C3,metrics_yen,25,4,c3,3,2.565,True,True,study2_allarms
+C3,metrics_yen,25,4,c4,4,−0.0317,True,True,study2_allarms
+C3,metrics_yen,25,4,c5,5,0.9828,True,True,study2_allarms
+C3,metrics_yen,25,4,c6,6,1.092,True,True,study2_allarms
+C3,metrics_yen,25,4,c7,7,−0.0761,True,True,study2_allarms
+C3,metrics_yen,25,5,c1,1,EW+BCm,False,True,study2_allarms
+C3,metrics_yen,25,5,c2,2,0.7107,True,True,study2_allarms
+C3,metrics_yen,25,5,c3,3,2.581,True,True,study2_allarms
+C3,metrics_yen,25,5,c4,4,−0.0358,True,True,study2_allarms
+C3,metrics_yen,25,5,c5,5,0.9859,True,True,study2_allarms
+C3,metrics_yen,25,5,c6,6,1.092,True,True,study2_allarms
+C3,metrics_yen,25,5,c7,7,−0.0783,True,True,study2_allarms
+C3,metrics_yen,25,6,c1,1,EW+YE,False,True,study2_allarms
+C3,metrics_yen,25,6,c2,2,0.7054,True,True,study2_allarms
+C3,metrics_yen,25,6,c3,3,2.499,True,True,study2_allarms
+C3,metrics_yen,25,6,c4,4,−0.0561,True,True,study2_allarms
+C3,metrics_yen,25,6,c5,5,0.9687,True,True,study2_allarms
+C3,metrics_yen,25,6,c6,6,0.993,True,True,study2_allarms
+C3,metrics_yen,25,6,c7,7,−0.0965,True,True,study2_allarms
+C3,metrics_yen,25,7,c1,1,EW+YEf,False,True,study2_allarms
+C3,metrics_yen,25,7,c2,2,0.7120,True,True,study2_allarms
+C3,metrics_yen,25,7,c3,3,2.317,True,True,study2_allarms
+C3,metrics_yen,25,7,c4,4,0.0199,True,True,study2_allarms
+C3,metrics_yen,25,7,c5,5,0.9744,True,True,study2_allarms
+C3,metrics_yen,25,7,c6,6,0.860,True,True,study2_allarms
+C3,metrics_yen,25,7,c7,7,0.0526,True,True,study2_allarms
+C3,metrics_yen,25,8,c1,1,MCS,False,True,study2_allarms
+C3,metrics_yen,25,8,c2,2,0.7195,True,True,study2_allarms
+C3,metrics_yen,25,8,c3,3,3.111,True,True,study2_allarms
+C3,metrics_yen,25,8,c4,4,−0.2835,True,True,study2_allarms
+C3,metrics_yen,25,8,c5,5,0.9884,True,True,study2_allarms
+C3,metrics_yen,25,8,c6,6,1.241,True,True,study2_allarms
+C3,metrics_yen,25,8,c7,7,−0.3349,True,True,study2_allarms
+C3,metrics_yen,25,9,c1,1,MCS+DJC,False,True,study2_allarms
+C3,metrics_yen,25,9,c2,2,0.7162,True,True,study2_allarms
+C3,metrics_yen,25,9,c3,3,2.565,True,True,study2_allarms
+C3,metrics_yen,25,9,c4,4,−0.0248,True,True,study2_allarms
+C3,metrics_yen,25,9,c5,5,0.9859,True,True,study2_allarms
+C3,metrics_yen,25,9,c6,6,0.976,True,True,study2_allarms
+C3,metrics_yen,25,9,c7,7,0.0140,True,True,study2_allarms
+C3,metrics_yen,25,10,c1,1,MCS+BCd,False,True,study2_allarms
+C3,metrics_yen,25,10,c2,2,0.7213,True,True,study2_allarms
+C3,metrics_yen,25,10,c3,3,2.697,True,True,study2_allarms
+C3,metrics_yen,25,10,c4,4,−0.0680,True,True,study2_allarms
+C3,metrics_yen,25,10,c5,5,0.9957,True,True,study2_allarms
+C3,metrics_yen,25,10,c6,6,1.043,True,True,study2_allarms
+C3,metrics_yen,25,10,c7,7,−0.0459,True,True,study2_allarms
+C3,metrics_yen,25,11,c1,1,MCS+BCm,False,True,study2_allarms
+C3,metrics_yen,25,11,c2,2,0.7228,True,True,study2_allarms
+C3,metrics_yen,25,11,c3,3,2.730,True,True,study2_allarms
+C3,metrics_yen,25,11,c4,4,−0.0772,True,True,study2_allarms
+C3,metrics_yen,25,11,c5,5,0.9997,True,True,study2_allarms
+C3,metrics_yen,25,11,c6,6,1.076,True,True,study2_allarms
+C3,metrics_yen,25,11,c7,7,−0.0699,True,True,study2_allarms
+C3,metrics_yen,25,12,c1,1,MCS+YE,False,True,study2_allarms
+C3,metrics_yen,25,12,c2,2,0.7146,True,True,study2_allarms
+C3,metrics_yen,25,12,c3,3,2.548,True,True,study2_allarms
+C3,metrics_yen,25,12,c4,4,−0.0643,True,True,study2_allarms
+C3,metrics_yen,25,12,c5,5,0.9801,True,True,study2_allarms
+C3,metrics_yen,25,12,c6,6,0.976,True,True,study2_allarms
+C3,metrics_yen,25,12,c7,7,−0.0729,True,True,study2_allarms
+C3,metrics_yen,25,13,c1,1,GJR,False,True,study2_allarms
+C3,metrics_yen,25,13,c2,2,0.7162,True,True,study2_allarms
+C3,metrics_yen,25,13,c3,3,3.128,True,True,study2_allarms
+C3,metrics_yen,25,13,c4,4,−0.2945,True,True,study2_allarms
+C3,metrics_yen,25,13,c5,5,0.9834,True,True,study2_allarms
+C3,metrics_yen,25,13,c6,6,1.324,True,True,study2_allarms
+C3,metrics_yen,25,13,c7,7,−0.3886,True,True,study2_allarms
+C4,crisis_yen,25,1,c1,1,97.5%,True,True,study2_crisis
+C4,crisis_yen,25,1,c2,2,1987-10-19,True,True,study2_crisis
+C4,crisis_yen,25,1,c3,3,Black Monday,False,True,study2_crisis
+C4,crisis_yen,25,1,c4,4,1.5330,True,True,study2_crisis
+C4,crisis_yen,25,1,c5,5,1.3867,True,True,study2_crisis
+C4,crisis_yen,25,1,c6,6,−0.1463,True,True,study2_crisis
+C4,crisis_yen,25,2,c1,1,97.5%,True,True,study2_crisis
+C4,crisis_yen,25,2,c2,2,1998-08-17,True,True,study2_crisis
+C4,crisis_yen,25,2,c3,3,Russian default,False,True,study2_crisis
+C4,crisis_yen,25,2,c4,4,2.2129,True,True,study2_crisis
+C4,crisis_yen,25,2,c5,5,1.9920,True,True,study2_crisis
+C4,crisis_yen,25,2,c6,6,−0.2209,True,True,study2_crisis
+C4,crisis_yen,25,3,c1,1,97.5%,True,True,study2_crisis
+C4,crisis_yen,25,3,c2,2,2001-09-17,True,True,study2_crisis
+C4,crisis_yen,25,3,c3,3,Reopening after 9/11,True,True,study2_crisis
+C4,crisis_yen,25,3,c4,4,0.2472,True,True,study2_crisis
+C4,crisis_yen,25,3,c5,5,0.2745,True,True,study2_crisis
+C4,crisis_yen,25,3,c6,6,0.0273,True,True,study2_crisis
+C4,crisis_yen,25,4,c1,1,97.5%,True,True,study2_crisis
+C4,crisis_yen,25,4,c2,2,2008-09-15,True,True,study2_crisis
+C4,crisis_yen,25,4,c3,3,Lehman bankruptcy,False,True,study2_crisis
+C4,crisis_yen,25,4,c4,4,2.8489,True,True,study2_crisis
+C4,crisis_yen,25,4,c5,5,2.3893,True,True,study2_crisis
+C4,crisis_yen,25,4,c6,6,−0.4596,True,True,study2_crisis
+C4,crisis_yen,25,5,c1,1,99%,True,True,study2_crisis
+C4,crisis_yen,25,5,c2,2,1987-10-19,True,True,study2_crisis
+C4,crisis_yen,25,5,c3,3,Black Monday,False,True,study2_crisis
+C4,crisis_yen,25,5,c4,4,1.6388,True,True,study2_crisis
+C4,crisis_yen,25,5,c5,5,1.2911,True,True,study2_crisis
+C4,crisis_yen,25,5,c6,6,−0.3477,True,True,study2_crisis
+C4,crisis_yen,25,6,c1,1,99%,True,True,study2_crisis
+C4,crisis_yen,25,6,c2,2,1998-08-17,True,True,study2_crisis
+C4,crisis_yen,25,6,c3,3,Russian default,False,True,study2_crisis
+C4,crisis_yen,25,6,c4,4,2.7189,True,True,study2_crisis
+C4,crisis_yen,25,6,c5,5,2.4452,True,True,study2_crisis
+C4,crisis_yen,25,6,c6,6,−0.2737,True,True,study2_crisis
+C4,crisis_yen,25,7,c1,1,99%,True,True,study2_crisis
+C4,crisis_yen,25,7,c2,2,2001-09-17,True,True,study2_crisis
+C4,crisis_yen,25,7,c3,3,Reopening after 9/11,True,True,study2_crisis
+C4,crisis_yen,25,7,c4,4,0.4680,True,True,study2_crisis
+C4,crisis_yen,25,7,c5,5,0.4834,True,True,study2_crisis
+C4,crisis_yen,25,7,c6,6,0.0154,True,True,study2_crisis
+C4,crisis_yen,25,8,c1,1,99%,True,True,study2_crisis
+C4,crisis_yen,25,8,c2,2,2008-09-15,True,True,study2_crisis
+C4,crisis_yen,25,8,c3,3,Lehman bankruptcy,False,True,study2_crisis
+C4,crisis_yen,25,8,c4,4,4.1546,True,True,study2_crisis
+C4,crisis_yen,25,8,c5,5,3.4203,True,True,study2_crisis
+C4,crisis_yen,25,8,c6,6,−0.7343,True,True,study2_crisis

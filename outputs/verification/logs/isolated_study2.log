@@ -1,0 +1,8 @@
+Running code/data/manage_inputs.py
+Exit 0; 2.2s; outputs\verification\logs\manage_inputs_1792900372526972500.log
+Running code/pipeline/study2.py
+Exit 0; 424.3s; outputs\verification\logs\study2_1792900374727063900.log
+Running code/pipeline/study2.py
+Exit 0; 122.6s; outputs\verification\logs\study2_1792900798991473600.log
+Running code/validation/verify_study2.py
+Exit 0; 14.3s; outputs\verification\logs\verify_study2_1792900921543263400.log

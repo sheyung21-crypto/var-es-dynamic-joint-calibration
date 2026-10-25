@@ -1,0 +1,13 @@
+{
+  "pdf_sha256": "86f29e6265870500ec6f4f653a1622fb0ba96dcc6512dffbba10b2f0104678d4",
+  "pages": 26,
+  "tables_checked": 13,
+  "table_rows": 105,
+  "table_rows_matching": 105,
+  "numeric_tokens": 543,
+  "shared_inputs_checked": 15,
+  "shared_inputs_identical": 15,
+  "additional_numeric_prose_claims": 49,
+  "additional_claims_matching": 49,
+  "claim": "Display-to-archive consistency and descriptive recomputation only; not a complete model replay."
+}

@@ -1,0 +1,51 @@
+[
+  {
+    "file": "30_Industry_Portfolios_daily_CSV.zip",
+    "url": "https://mba.tuck.dartmouth.edu/pages/faculty/ken.french/ftp/30_Industry_Portfolios_daily_CSV.zip",
+    "bytes": 2597362,
+    "sha256": "04a7a74fcd7c12e90461718e5ba8490e99d18c3e9323182b6c7a7b320e6cd34a",
+    "downloaded_at": "2026-10-23T22:23:33+00:00"
+  },
+  {
+    "file": "yahoo_TWII.json",
+    "url": "https://query1.finance.yahoo.com/v8/finance/chart/%5ETWII?period1=0&period2=1792794213&interval=1d&includeAdjustedClose=true",
+    "bytes": 689915,
+    "sha256": "0ca89944534f38a8b298c0899a73df02fb37953895797a6c7ae80f1ab8b93329",
+    "downloaded_at": "2026-10-23T22:23:33+00:00"
+  },
+  {
+    "file": "yahoo_KS11.json",
+    "url": "https://query1.finance.yahoo.com/v8/finance/chart/%5EKS11?period1=0&period2=1792794213&interval=1d&includeAdjustedClose=true",
+    "bytes": 771428,
+    "sha256": "03d456451d3fa3b068044c8d29b9a1046db7c2f5152f8a8d2accfd57b5167b0f",
+    "downloaded_at": "2026-10-23T22:23:35+00:00"
+  },
+  {
+    "file": "yahoo_FTSE.json",
+    "url": "https://query1.finance.yahoo.com/v8/finance/chart/%5EFTSE?period1=0&period2=1792794213&interval=1d&includeAdjustedClose=true",
+    "bytes": 1010771,
+    "sha256": "a8e62f7fb39e9c68fbe5c9e96f638c8aa8461fdf90ebff436dadb183a6ae0edf",
+    "downloaded_at": "2026-10-23T22:23:36+00:00"
+  },
+  {
+    "file": "yahoo_GDAXI.json",
+    "url": "https://query1.finance.yahoo.com/v8/finance/chart/%5EGDAXI?period1=0&period2=1792794213&interval=1d&includeAdjustedClose=true",
+    "bytes": 975505,
+    "sha256": "bb64d171189e255c12748f55c34f1894b70b5e0426327bb29b44b166b5d7ce60",
+    "downloaded_at": "2026-10-23T22:23:38+00:00"
+  },
+  {
+    "file": "yahoo_AXJO.json",
+    "url": "https://query1.finance.yahoo.com/v8/finance/chart/%5EAXJO?period1=0&period2=1792794213&interval=1d&includeAdjustedClose=true",
+    "bytes": 769445,
+    "sha256": "20921f149b40432bcb20baa4fd401bd339a6a375565a27b56664c2ed1c6b7e10",
+    "downloaded_at": "2026-10-23T22:23:39+00:00"
+  },
+  {
+    "file": "yahoo_GSPTSE.json",
+    "url": "https://query1.finance.yahoo.com/v8/finance/chart/%5EGSPTSE?period1=0&period2=1792794213&interval=1d&includeAdjustedClose=true",
+    "bytes": 1117430,
+    "sha256": "704065bd537bedd65a0a4fe60bce6bf81b3923d6bf86e30b70f7dcfbae52b519",
+    "downloaded_at": "2026-10-23T22:23:40+00:00"
+  }
+]

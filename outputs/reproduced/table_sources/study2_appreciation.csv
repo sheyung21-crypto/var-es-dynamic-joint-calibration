@@ -1,0 +1,5 @@
+Level,State,Days,Mean A2--A0,HAC 95\% interval
+97.5\%,Sharp appreciation,605,-0.151649,"[-0.2289, -0.0744]"
+97.5\%,Other days,5438,0.009017,"[-0.0029, 0.0209]"
+99\%,Sharp appreciation,605,-0.204116,"[-0.3418, -0.0664]"
+99\%,Other days,5438,0.019136,"[0.0023, 0.0359]"
