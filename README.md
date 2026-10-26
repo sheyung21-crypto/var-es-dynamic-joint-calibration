@@ -1,12 +1,12 @@
 # Research Reproducibility Package
 
-Documentation dated 25 October 2026. Changes made in preparing this package are listed in `provenance/Packaging_Changes.md`.
+Changes made in preparing this package are listed in `provenance/Packaging_Changes.md`.
 
 ## Research Overview
 
 Companion manuscript: *Dynamic Joint Calibration of Combined VaR and ES Forecasts: Evidence from US Industries and the Yen*, Shih-Yung Yang.
 
-This package accompanies the paper on dynamic joint calibration of value-at-risk (VaR) and expected shortfall (ES). It preserves the forecasting algorithms, fixed settings, input identities and empirical results reported in the 26-page English manuscript (PDF SHA-256 `b47ac3425977fde7a67a72e92c28457ad7345743afa38114ad3da98ec665281f`). The verification records in `outputs/verification/` were produced for an earlier build of the same paper (PDF SHA-256 `86f29e6265870500ec6f4f653a1622fb0ba96dcc6512dffbba10b2f0104678d4`). The manuscript differs from that build only in its title page (ORCID and code-availability lines added, date line removed), one added funding sentence in the declarations, two end-of-proof marks and layout (equation spacing, table column widths and paragraph breaks in the appendix proofs); its other wording, tables and numbers are identical.
+This package accompanies the paper on dynamic joint calibration of value-at-risk (VaR) and expected shortfall (ES). It preserves the forecasting algorithms, fixed settings, input identities and empirical results reported in the 26-page English manuscript (PDF SHA-256 `70fd1dc8568d5bfb1e7b0a96cdd867d9873577cf5beb78b6c82507eadd2af159`). The verification records in `outputs/verification/` were produced for an earlier build of the same paper (PDF SHA-256 `86f29e6265870500ec6f4f653a1622fb0ba96dcc6512dffbba10b2f0104678d4`). The manuscript differs from that build only in its title page (ORCID and code-availability lines added, date line removed), the wording of the Introduction (Section 1), one added funding sentence in the declarations, two end-of-proof marks and layout (equation spacing, table column widths and paragraph breaks in the appendix proofs); its other wording, tables and numbers are identical.
 
 Study 1 evaluates 30 US industry portfolios and six international equity indices. Study 2 applies the frozen procedure to an earlier Japanese-yen sample. The central comparison is EW+DJC versus the uncalibrated equal-weight combination (EW), using the FZ0 score at the 97.5% level (alpha = 0.025). The industry comparisons with daily batch calibration and the adapted Ye-type controller are also primary; the 99% level and the remaining comparisons are secondary. Code labels A0, A2, F and R0 correspond to EW, EW+DJC, EW+DJC-FIX and GJR. The complete mapping appears in `outputs/reproduced/tables/Table_1.csv`.
 

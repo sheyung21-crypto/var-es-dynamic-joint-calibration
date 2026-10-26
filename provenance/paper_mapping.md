@@ -10,7 +10,7 @@
 
 ## Manuscript build
 
-The audit used the manuscript build `VaR_ES_Dynamic_Joint_Calibration.pdf` (26 pages, SHA-256 `86f29e6265870500ec6f4f653a1622fb0ba96dcc6512dffbba10b2f0104678d4`). The final manuscript differs from it only in its title page (ORCID and code-availability lines added, date line removed), one added funding sentence in the declarations, two end-of-proof marks and layout; its other wording, tables and numbers are identical.
+The audit used the manuscript build `VaR_ES_Dynamic_Joint_Calibration.pdf` (26 pages, SHA-256 `86f29e6265870500ec6f4f653a1622fb0ba96dcc6512dffbba10b2f0104678d4`). The final manuscript differs from it only in its title page (ORCID and code-availability lines added, date line removed), the wording of the Introduction (Section 1), one added funding sentence in the declarations, two end-of-proof marks and layout; its other wording, tables and numbers are identical.
 
 The earlier `publication_20261024` directory is the numerical research source. The final PDF was produced by `revised_manuscript_20261024` using presentation-stage copies of those results in `publication_zh_20261024`. These copies are not a new estimation run.
 

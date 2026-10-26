@@ -4,13 +4,13 @@
     {
       "file": "Data_Sources.pdf",
       "pages": 5,
-      "sha256": "70b81dc3661a5a0cbf8a5cad4036d2118f68827a3800094e6f7b5ce735ae267f",
+      "sha256": "09492109f20d4fd70d219c098f4caadba70897be625dbe6ea9f29e9cf171f10e",
       "visual_check": "PASS"
     },
     {
       "file": "Research_Reproducibility_Summary.pdf",
       "pages": 4,
-      "sha256": "9f12efafefe34a0dfdb8e9ce2725aae8d0d5ade45c96bb3ea75182628b6cf6c1",
+      "sha256": "27df40532d750423ee1683408000a633bfd2cbb4082f999b6970d73dfe1e9bc9",
       "visual_check": "PASS"
     }
   ],
